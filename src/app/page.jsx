@@ -251,7 +251,7 @@ export default function Accueil() {
             {/* Offres */}
             <div className="bg-[#D0EBCF] px-[8%] pb-[70px]">
                 <div className="pt-[50px]">
-                    <h2 className="text-center text-[16px] text-[#377A00] font-bold mb-[20px] ">
+                    <h2 className="text-center text-[16px] text-[#377A00] font-bold  ">
                         Nos offres de services exclusives
                     </h2>
                     <h2 className="text-center text-[26px] text-black font-bold mb-[25px]">
@@ -316,7 +316,7 @@ export default function Accueil() {
             </div>
 
             {/* Section témoignage */}
-            <div className="mb-[80px]">
+            <div className="mb-[50px]">
                 <div className="my-[50px]">
                     <h2 className="text-center text-[16px] text-[#377A00] font-bold ">
                         Témoignages Vérifiés
@@ -331,7 +331,7 @@ export default function Accueil() {
             {/* Section Nos Produits */}
             <div className="mb-[80px]">
                 <div className="my-[50px]">
-                    <h2 className="text-center text-[16px] text-[#377A00] font-bold mb-[20px]">
+                    <h2 className="text-center text-[16px] text-[#377A00] font-bold mb-[5px]">
                         Nos Produits
                     </h2>
                     <h2 className="text-center text-[26px] text-black font-bold px-[10px] leading-[26px]">
@@ -479,7 +479,7 @@ export default function Accueil() {
                     <h2 className="text-center text-[26px] text-black font-bold px-[10px] leading-[26px]">
                         Produits phytoscience
                     </h2>
-                    <p className="text-black text-center font-regular text-[20px] mb-[30px] px-[30px] pt-[30px]">
+                    <p className="text-black text-center font-regular text-[20px] mb-[30px] px-[30px] pt-[20px]">
                         N’hésitez pas à en apprendre un peu plus sur les biens
                         faits de nos différents produits.
                     </p>
@@ -515,7 +515,7 @@ export default function Accueil() {
                     <h2 className="text-center text-[26px] text-black font-bold px-[30px] leading-[26px]">
                         Découvrez notre magasin en personne!
                     </h2>
-                    <p className="text-black text-center font-regular text-[20px] px-[30px] pt-[30px]">
+                    <p className="text-black text-center font-regular text-[20px] px-[30px] pt-[20px]">
                         Utilisez la carte interactive sur notre site pour
                         trouver facilement notre emplacement et profiter d’une
                         expérience d’achat exceptionnelle.
