@@ -5,31 +5,17 @@ import logo from "../../../public/assets/logo phyto.png";
 
 export default function Navbar() {
     return (
-        // <nav classNameName="w-full bg-slate-400">
-        //   <Link classNameName="px-[5px]" href="/">
-        //     Accueil
-        //   </Link>
-        //   <Link classNameName="px-[5px]" href="/produits">
-        //     Produits
-        //   </Link>
-        //   <Link classNameName="px-[5px]" href="/temoignages">
-        //     Témoignages
-        //   </Link>
-        //   <Link classNameName="px-[5px]" href="/actualites">
-        //     Actualités
-        //   </Link>
-        //   <Link classNameName="px-[5px]" href="/a-propos">
-        //     A propos
-        //   </Link>
-        // </nav>
-
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a
                     href="/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
-                    <Image src={logo} alt="logo phytoscience" className="object-cover h-[50px] w-[160px]" />
+                    <Image
+                        src={logo}
+                        alt="logo phytoscience"
+                        className="object-cover h-[50px] w-[160px]"
+                    />
                 </a>
                 <button
                     data-collapse-toggle="navbar-default"
