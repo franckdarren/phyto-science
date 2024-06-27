@@ -210,7 +210,7 @@ export default function Accueil() {
 
             {/* Section fil d'actualité */}
             <div className="bg-white flex flex-col justify-center py-[40px] mx-[8%] relative top-[-50px] rounded-[15px] shadow-xl">
-                <h2 className="text-[20px] font-bold text-center px-[70px] mb-[10px]">
+                <h2 className="text-[20px] font-bold text-center px-[60px] mb-[10px]">
                     Soyez à jour sur notre fil d’actualité
                 </h2>
                 <p className="font-regular text-[15.5px] leading-[23.3px] text-center px-[40px] mb-[30px]">
@@ -267,7 +267,7 @@ export default function Accueil() {
                             className="object-cover h-[200px] w-full rounded-t-lg"
                         />
                         <div className="my-[20px] px-[40px]">
-                            <h3 className="font-bold text-[18px] text-center mb-[10px]">
+                            <h3 className="font-bold text-[20px] text-center mb-[10px]">
                                 Traitement
                             </h3>
                             <p className="font-regular text-[15.5px] text-center leading-[24px] pb-[10px]">
@@ -285,7 +285,7 @@ export default function Accueil() {
                             className="object-cover h-[200px] w-full rounded-t-lg"
                         />
                         <div className="my-[20px] px-[40px]">
-                            <h3 className="font-bold text-[18px] text-center mb-[10px]">
+                            <h3 className="font-bold text-[20px] text-center mb-[10px]">
                                 Prévention
                             </h3>
                             <p className="font-regular text-[15.5px] text-center leading-[24px] pb-[10px]">
@@ -303,7 +303,7 @@ export default function Accueil() {
                             className="object-cover h-[200px] w-full rounded-t-lg"
                         />
                         <div className="my-[20px] px-[40px]">
-                            <h3 className="font-bold text-[18px] text-center mb-[10px]">
+                            <h3 className="font-bold text-[20px] text-center mb-[10px]">
                                 Recherche
                             </h3>
                             <p className="font-regular text-[15.5px] text-center leading-[24px] pb-[10px]">
@@ -491,7 +491,7 @@ export default function Accueil() {
                 </div>
             </div>
             {/* Section Révolution technologique */}
-            <div className="bg-[#377A00] flex flex-col justify-center py-[40px] mx-[8%] rounded-[15px] shadow-xl">
+            <div className="bg-[#377A00] flex flex-col justify-center py-[40px] mx-[5%] rounded-[15px] shadow-xl">
                 <h2 className="text-white text-[26px] font-bold text-center px-[10px] mb-[10px]">
                     Rejoignez la Révolution Biotechnologique
                 </h2>
