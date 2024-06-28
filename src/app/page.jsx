@@ -588,7 +588,7 @@ const RevolutionTechnologique = () => {
 
             {/* Bouton personalisé */}
             <Link
-                href="#"
+                href="https://wa.me/+24107676213"
                 class="text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
             >
                 Nous contacter via Whatsapp
