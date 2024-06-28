@@ -200,7 +200,6 @@ const PresentationPhytoScience = () => {
                         engagée à aider les gens à prendre le contrôle de leur
                         santé, tant physique que financier.
                     </p>
-                    <Button text="Lire la suite" route={"/a-propos"} />
                 </div>
                 <Image
                     src={team}
