@@ -8,7 +8,7 @@ import prevention from "../../public/assets/prevention.jpeg";
 import recherche from "../../public/assets/recherche.jpeg";
 import nuforte from "../../public/assets/NuForte.jpg";
 import nulite from "../../public/assets/NuLite.jpg";
-import snowphy from "../../public/assets/snowphyllforte-product1.png";
+import snowphy from "../../public/assets/SnowPhyllForte.png";
 import Link from "next/link";
 import logo from "../../public/assets/logo phyto.png";
 import certificat from "../../public/assets/certificat.jpg";
@@ -162,18 +162,20 @@ export default function Accueil() {
                         PhytoScience GABON LTD.
                     </h2>
                 </div>
-                <div className="flex flex-col justify-center bg-[#EAF7EB]">
-                    <p className="text-black font-regular text-[20px] mb-[30px] px-[5%] pt-[15px]">
-                        Phyto Science est une entreprise mondiale de santé et de
-                        bien-être, à la pointe de l’innovation de produits et
-                        engagée à aider les gens à prendre le contrôle de leur
-                        santé, tant physique que financier.
-                    </p>
-                    <Button text="Lire la suite" route={"/produits"} />
+                <div className="flex flex-col justify-center bg-[#EAF7EB] md:flex-row md:px-[20px] md:gap-[100px] md:py-[50px]">
+                    <div className="flex flex-col justify-center">
+                        <p className="text-black font-regular text-[20px] mb-[30px] px-[5%] md:px-[0] pt-[15px]">
+                            Phyto Science est une entreprise mondiale de santé
+                            et de bien-être, à la pointe de l’innovation de
+                            produits et engagée à aider les gens à prendre le
+                            contrôle de leur santé, tant physique que financier.
+                        </p>
+                        <Button text="Lire la suite" route={"/produits"} />
+                    </div>
                     <Image
                         src={team}
                         alt="Team phytoscience"
-                        className="object-cover h-[250px] w-full mt-[50px] mb-[25px]"
+                        className="object-cover h-[250px] w-full mt-[50px] mb-[25px] md:h-[150px] md:w-auto"
                     />
                 </div>
             </div>
@@ -188,18 +190,21 @@ export default function Accueil() {
                         Thècle Valérie MPIGA Ep. HOLA
                     </h2>
                 </div>
-                <div className="flex flex-col justify-center bg-[#C9F0CD] shadow-xl">
-                    <p className="text-black text-center font-regular text-[20px] mb-[30px] px-[5%] pt-[30px]">
-                        Chez PhytoScience, nous nous engageons à offrir des
-                        produits de bien-être innovants et naturels, conçus pour
-                        améliorer la santé et la qualité de vie de chacun.
-                        <br />
-                        Je suis ravie de partager avec vous notre vision et nos
-                        solutions pour un avenir plus sain et équilibré. Merci
-                        de votre attention et de votre intérêt pour nos
-                        produits…
-                    </p>
-                    <Button text="Lire la suite" route={"/produits"} />
+                <div className="flex flex-col justify-center bg-[#C9F0CD] shadow-xl md:flex-row md:gap-[70px] md:px-[50px]">
+                    <div className="flex flex-col justify-center">
+                        <p className="text-black text-center font-regular text-[20px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0]">
+                            Chez PhytoScience, nous nous engageons à offrir des
+                            produits de bien-être innovants et naturels, conçus
+                            pour améliorer la santé et la qualité de vie de
+                            chacun.
+                            <br />
+                            Je suis ravie de partager avec vous notre vision et
+                            nos solutions pour un avenir plus sain et équilibré.
+                            Merci de votre attention et de votre intérêt pour
+                            nos produits…
+                        </p>
+                        <Button text="Lire la suite" route={"/produits"} />
+                    </div>
                     <Image
                         src={mpiga}
                         alt="Photo de madame Mpiga"
@@ -221,35 +226,37 @@ export default function Accueil() {
                 <Button text="En savoir plus" route={"#"} className="" />
             </div>
 
-            {/* Section Qui sommes nous? */}
-            <div className="px-[8%] mb-[50px]">
+            {/* Section Les Cellules Souches? */}
+            <div className="px-[8%] md:px-[4%] mb-[50px] md:flex md:flex-row md:gap-[50px] md:items-center">
                 <Image
                     src={cellule}
                     alt="Team phytoscience"
-                    className="object-cover h-[250px] w-full mt-[40px] rounded-[15px]"
+                    className="object-cover h-[250px] w-full mt-[40px] rounded-[15px] md:h-[200px] md:w-auto"
                 />
-                <div className="mt-[40px] mb-[20px]">
-                    <h2 className="text-[16px] text-[#377A00] font-bold ">
-                        QU’EST CE QUE
-                    </h2>
-                    <h2 className="text-[26px] text-black font-bold ">
-                        Les cellules souches ?
-                    </h2>
-                </div>
+                <div>
+                    <div className="mt-[40px] mb-[20px]">
+                        <h2 className="text-[16px] text-[#377A00] font-bold ">
+                            QU’EST CE QUE
+                        </h2>
+                        <h2 className="text-[26px] text-black font-bold ">
+                            Les cellules souches ?
+                        </h2>
+                    </div>
 
-                <div className="flex flex-col justify-center">
-                    <p className="text-black font-regular text-[20px] mb-[30px]">
-                        Phyto Science est une entreprise mondiale de santé et de
-                        bien-être, à la pointe de l’innovation de produits et
-                        engagée à aider les gens à prendre le contrôle de leur
-                        santé, tant physique que financier.
-                    </p>
-                    <Button text="Lire la suite" route={"/produits"} />
+                    <div className="flex flex-col justify-center">
+                        <p className="text-black font-regular text-[20px] mb-[30px]">
+                            Phyto Science est une entreprise mondiale de santé
+                            et de bien-être, à la pointe de l’innovation de
+                            produits et engagée à aider les gens à prendre le
+                            contrôle de leur santé, tant physique que financier.
+                        </p>
+                        <Button text="Lire la suite" route={"/produits"} />
+                    </div>
                 </div>
             </div>
 
             {/* Offres */}
-            <div className="bg-[#D0EBCF] px-[8%] pb-[70px]">
+            <div className="bg-[#D0EBCF] px-[8%] md:px-[3%] pb-[70px]">
                 <div className="pt-[50px]">
                     <h2 className="text-center text-[16px] text-[#377A00] font-bold  ">
                         Nos offres de services exclusives
@@ -258,15 +265,15 @@ export default function Accueil() {
                         Services Principaux
                     </h2>
                 </div>
-                <div className="flex flex-col justify-center gap-[50px]">
+                <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px]">
                     {/* Card 1 */}
-                    <div className="w-[95%] mx-auto bg-white rounded-lg shadow-xl">
+                    <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
                         <Image
                             src={traitement}
                             alt="Image traitement"
                             className="object-cover h-[200px] w-full rounded-t-lg"
                         />
-                        <div className="my-[20px] px-[40px]">
+                        <div className="my-[20px] px-[40px] md:px-[10px]">
                             <h3 className="font-bold text-[20px] text-center mb-[10px]">
                                 Traitement
                             </h3>
@@ -278,13 +285,13 @@ export default function Accueil() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="w-[95%] mx-auto bg-white rounded-lg shadow-xl">
+                    <div className="w-[95%]md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
                         <Image
                             src={prevention}
                             alt="Image traitement"
                             className="object-cover h-[200px] w-full rounded-t-lg"
                         />
-                        <div className="my-[20px] px-[40px]">
+                        <div className="my-[20px] px-[40px] md:px-[10px]">
                             <h3 className="font-bold text-[20px] text-center mb-[10px]">
                                 Prévention
                             </h3>
@@ -296,13 +303,13 @@ export default function Accueil() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="w-[95%] mx-auto bg-white rounded-lg shadow-xl">
+                    <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
                         <Image
                             src={recherche}
                             alt="Image traitement"
                             className="object-cover h-[200px] w-full rounded-t-lg"
                         />
-                        <div className="my-[20px] px-[40px]">
+                        <div className="my-[20px] px-[40px] md:px-[10px]">
                             <h3 className="font-bold text-[20px] text-center mb-[10px]">
                                 Recherche
                             </h3>
@@ -475,18 +482,20 @@ export default function Accueil() {
                         </div>
                     </div>
                 </div>
-                <div className="my-[50px] flex flex-col">
-                    <h2 className="text-center text-[26px] text-black font-bold px-[10px] leading-[26px]">
-                        Produits phytoscience
-                    </h2>
-                    <p className="text-black text-center font-regular text-[20px] mb-[30px] px-[30px] pt-[20px]">
-                        N’hésitez pas à en apprendre un peu plus sur les biens
-                        faits de nos différents produits.
-                    </p>
+                <div className="my-[50px] flex flex-col md:mt-[250px] md:flex-row md:items-center md:justify-between">
+                    <div className="md:w-[70%]">
+                        <h2 className="md:text-left text-center text-[26px] text-black font-bold px-[10px] md:px-0 leading-[26px] ">
+                            Produits phytoscience
+                        </h2>
+                        <p className="md:text-left text-black text-center font-regular text-[20px] mb-[30px] px-[30px] md:px-0 pt-[20px] md:pl-[30px]">
+                            N’hésitez pas à en apprendre un peu plus sur les
+                            biens faits de nos différents produits.
+                        </p>
+                    </div>
                     <Button
                         text="Voir plus de produits"
                         route={"#"}
-                        className=""
+                        className="md:mx-0"
                     />
                 </div>
             </div>
@@ -521,7 +530,18 @@ export default function Accueil() {
                         expérience d’achat exceptionnelle.
                     </p>
                 </div>
-                <div className="bg-[#377A00] h-[200px]"></div>
+                <div className="h-[300px] md:h-[400px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d34846.70753050023!2d9.414189763506515!3d0.40919691942453285!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMjQnMzMuNyJOIDnCsDI2JzIxLjciRQ!5e1!3m2!1sfr!2sga!4v1719524659687!5m2!1sfr!2sga"
+                        width=""
+                        className="w-full h-[300px] md:h-[400px]"
+                        height=""
+                        style={{ border: 0 }}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
             </div>
 
             {/* Section pré footer */}
