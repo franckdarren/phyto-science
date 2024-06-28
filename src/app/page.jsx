@@ -16,6 +16,10 @@ import iiQ from "../../public/assets/iiQ-plus.jpg";
 import bienvenue from "../../public/assets/bienvenue.png";
 import baniereMpiga from "../../public/assets/mpiga-baniere.png";
 import banniere from "../../public/assets/banniere.png";
+import temoignage1 from "../../public/assets/temoignage1.jpg";
+import temoignage2 from "../../public/assets/temoignage2.jpg";
+import temoignage3 from "../../public/assets/temoignage3.jpg";
+import temoignage4 from "../../public/assets/temoignage4.jpg";
 
 export default function Accueil() {
     return (
@@ -318,7 +322,34 @@ export default function Accueil() {
                         Découvrez les différents récits
                     </h2>
                 </div>
-                <div className="bg-[#80B42A] h-[300px]"></div>
+                <div className="">
+                    <div class="grid grid-cols-2 gap-2">
+                        {/* Témoignage 1 */}
+                        <Image
+                            src={temoignage1}
+                            alt="Image traitement"
+                            className="h-auto max-w-full rounded-lg"
+                        />
+                        {/* Témoignage 2 */}
+                        <Image
+                            src={temoignage2}
+                            alt="Image traitement"
+                            className="h-auto max-w-full rounded-lg"
+                        />
+                        {/* Témoignage 3 */}
+                        <Image
+                            src={temoignage3}
+                            alt="Image traitement"
+                            className="h-auto max-w-full rounded-lg"
+                        />
+                        {/* Témoignage 4 */}
+                        <Image
+                            src={temoignage4}
+                            alt="Image traitement"
+                            className="h-auto max-w-full rounded-lg"
+                        />
+                    </div>
+                </div>
             </div>
 
             {/* Section Nos Produits */}
