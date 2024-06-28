@@ -305,7 +305,7 @@ const OffreService = () => {
                     Services Principaux
                 </h2>
             </div>
-            <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px] lg:px-[20%] lg:gap-[25px]">
+            <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px] lg:px-[15%] lg:gap-[25px]">
                 {/* Card 1 */}
                 <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
                     <Image
@@ -565,10 +565,12 @@ const Produits = () => {
                         faits de nos différents produits.
                     </p>
                 </div>
-                <Button
-                    text="Voir les produits"
-                    route={"/produits"}
-                />
+                <Link
+                    href="/produits"
+                    class="text-white text-[15px] bg-[#377A00] hover:bg-[#65973c]  font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
+                >
+                    Voir plus de produits
+                </Link>
             </div>
         </div>
     );
