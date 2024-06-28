@@ -3,8 +3,11 @@ import africa from "../../../public/assets/africa.png";
 
 export default function Temoignages() {
     return (
-        <>
-            <div className="flex flex-col justify-center my-[50px] md:grid md:grid-cols-2 gap-[30px] md:gap-6 lg:grid-cols-3 mx-[3%]">
+        <div className="my-[50px] px-[5%]">
+            <h2 className="text-[26px] text-black font-bold mb-[20px] ">
+                Témoignages
+            </h2>
+            <div className="flex flex-col justify-center md:grid md:grid-cols-2 gap-[30px] md:gap-6 lg:grid-cols-3">
                 {/* Actualité 1 */}
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto">
                     <Image
@@ -131,6 +134,6 @@ export default function Temoignages() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

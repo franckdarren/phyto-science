@@ -8,8 +8,8 @@ import iiQ from "../../../public/assets/iiQ-plus.jpg";
 import double from "../../../public/assets/double-stemcell.png";
 import triple3 from "../../../public/assets/triple3.jpg";
 import h20 from "../../../public/assets/h20.png";
-import certificat from "../../../public/assets/certificat.jpg";
 import CardProduit from "./card";
+import PreFooter from "../_components/pre-footer";
 
 export default function Produits() {
     return (
@@ -78,24 +78,6 @@ export default function Produits() {
 
                     {/* Produit 9 */}
                     <CardProduit nomProduit={"H20"} imageProduit={h20} />
-                </div>
-                <div className="mt-[50px] md:flex md:gap-[100px] md:items-center">
-                    <div>
-                        <h2 className="font-bold text-[22px]">
-                            Phyto Science Gabon
-                        </h2>
-                        <p className="font-regular text-[16px] leading-[24px] lg:pr-[300px]">
-                            Pionnier du traitement des pathologies lourdes avec
-                            les cellules souches végétales, Phyto science Gabon
-                            s&apos;engage à offrir des solutions de pointe pour
-                            votre bien-être.
-                        </p>
-                    </div>
-                    <Image
-                        src={certificat}
-                        alt="Certificat"
-                        className="object-cover h-[230px] w-[90%] p-[10px] mx-auto mt-[30px] lg:h-[220px] lg:w-auto"
-                    />
                 </div>
             </div>
         </>
