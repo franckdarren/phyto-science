@@ -23,10 +23,11 @@ export default function Produits() {
                     <CardProduit
                         nomProduit={"SnowPhyllForte"}
                         imageProduit={snowphyllforte}
+                        description="Test 1"
                     />
 
                     {/* Produit 2 */}
-                    <div className="shadow-2xl h-[280px] w-full rounded-xl">
+                    {/* <div className="shadow-2xl h-[280px] w-full rounded-xl">
                         <p className="font-light text-[20px] text-center text-white bg-[#377A00] inline-block px-[15px] rounded-full relative left-[10px] top-[5px]">
                             Actual+
                         </p>
@@ -35,25 +36,36 @@ export default function Produits() {
                             alt="Produit snowphyllforte"
                             className="object-cover h-[240px] w-auto mx-auto"
                         />
-                    </div>
+                    </div> */}
+                    <CardProduit
+                        nomProduit={"Actual+"}
+                        imageProduit={actual}
+                        description="Test 2"
+                    />
 
                     {/* Produit 3 */}
                     <CardProduit
                         nomProduit={"Cristall Cell"}
                         imageProduit={crystal}
+                        description="Test 3"
                     />
 
                     {/* Produit 4 */}
                     <CardProduit
                         nomProduit={"NuForte"}
                         imageProduit={NuForte}
+                        description="Test 4"
                     />
 
                     {/* Produit 5 */}
-                    <CardProduit nomProduit={"NuLite"} imageProduit={NuLite} />
+                    <CardProduit
+                        nomProduit={"NuLite"}
+                        imageProduit={NuLite}
+                        description="Test 5"
+                    />
 
                     {/* Produit 6 */}
-                    <div className="shadow-2xl h-[280px] w-full rounded-xl">
+                    {/* <div className="shadow-2xl h-[280px] w-full rounded-xl">
                         <p className="font-light text-[20px] text-center text-white bg-[#377A00] inline-block px-[15px] rounded-full relative left-[10px] top-[5px]">
                             iiQ Plus+
                         </p>
@@ -62,22 +74,33 @@ export default function Produits() {
                             alt="Produit snowphyllforte"
                             className="object-cover h-[240px] w-auto mx-auto"
                         />
-                    </div>
+                    </div> */}
+                    <CardProduit
+                        nomProduit={"iiQ Plus"}
+                        imageProduit={iiQ}
+                        description="Test 6"
+                    />
 
                     {/* Produit 7 */}
                     <CardProduit
                         nomProduit={"Double Stemcell"}
                         imageProduit={double}
+                        description="Test 7"
                     />
 
                     {/* Produit 8 */}
                     <CardProduit
                         nomProduit={"Trible 3"}
                         imageProduit={triple3}
+                        description="Test 8"
                     />
 
                     {/* Produit 9 */}
-                    <CardProduit nomProduit={"H20"} imageProduit={h20} />
+                    <CardProduit
+                        nomProduit={"H20"}
+                        imageProduit={h20}
+                        description="Test 9"
+                    />
                 </div>
             </div>
         </>
