@@ -18,7 +18,7 @@ export default function Produits() {
                 <h2 className="text-[26px] text-black font-bold mb-[20px] ">
                     Tous les Produits
                 </h2>
-                <div className="flex flex-col items-center justify-center gap-[50px]">
+                <div className="flex flex-col items-center justify-center gap-[50px] md:grid md:grid-cols-3">
                     {/* Produit 1 */}
                     <CardProduit
                         nomProduit={"SnowPhyllForte"}
@@ -26,14 +26,14 @@ export default function Produits() {
                     />
 
                     {/* Produit 2 */}
-                    <div className="shadow-2xl h-[250px] w-full rounded-xl">
+                    <div className="shadow-2xl h-[280px] w-full rounded-xl">
                         <p className="font-light text-[20px] text-center text-white bg-[#377A00] inline-block px-[15px] rounded-full relative left-[10px] top-[5px]">
-                          Actual+
+                            Actual+
                         </p>
                         <Image
                             src={actual}
                             alt="Produit snowphyllforte"
-                            className="object-cover h-[200px] w-auto mx-auto"
+                            className="object-cover h-[240px] w-auto mx-auto"
                         />
                     </div>
 
@@ -53,14 +53,14 @@ export default function Produits() {
                     <CardProduit nomProduit={"NuLite"} imageProduit={NuLite} />
 
                     {/* Produit 6 */}
-                    <div className="shadow-2xl h-[250px] w-full rounded-xl">
+                    <div className="shadow-2xl h-[280px] w-full rounded-xl">
                         <p className="font-light text-[20px] text-center text-white bg-[#377A00] inline-block px-[15px] rounded-full relative left-[10px] top-[5px]">
-                          iiQ Plus+
+                            iiQ Plus+
                         </p>
                         <Image
                             src={iiQ}
                             alt="Produit snowphyllforte"
-                            className="object-cover h-[200px] w-auto mx-auto"
+                            className="object-cover h-[240px] w-auto mx-auto"
                         />
                     </div>
 
@@ -79,18 +79,23 @@ export default function Produits() {
                     {/* Produit 9 */}
                     <CardProduit nomProduit={"H20"} imageProduit={h20} />
                 </div>
-                <div className="mt-[50px]">
-                  <h2 className="font-bold text-[22px]">Phyto Science Gabon</h2>
-                  <p className="font-regular text-[16px] leading-[24px]">
-                      Pionnier du traitement des pathologies lourdes avec les
-                      cellules souches végétales, Phyto science Gabon s&apos;engage à
-                      offrir des solutions de pointe pour votre bien-être.
-                  </p>
-                  <Image
+                <div className="mt-[50px] md:flex md:gap-[100px] md:items-center">
+                    <div>
+                        <h2 className="font-bold text-[22px]">
+                            Phyto Science Gabon
+                        </h2>
+                        <p className="font-regular text-[16px] leading-[24px] lg:pr-[300px]">
+                            Pionnier du traitement des pathologies lourdes avec
+                            les cellules souches végétales, Phyto science Gabon
+                            s&apos;engage à offrir des solutions de pointe pour
+                            votre bien-être.
+                        </p>
+                    </div>
+                    <Image
                         src={certificat}
                         alt="Certificat"
-                        className="object-cover h-[230px] w-[90%] p-[10px] mx-auto mt-[30px]"
-                  />
+                        className="object-cover h-[230px] w-[90%] p-[10px] mx-auto mt-[30px] lg:h-[220px] lg:w-auto"
+                    />
                 </div>
             </div>
         </>
