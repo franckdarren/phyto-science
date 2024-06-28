@@ -185,15 +185,15 @@ const PresentationPhytoScience = () => {
     return (
         <div className="">
             <div className="my-[50px]">
-                <h2 className="text-center text-[16px] text-[#377A00] font-bold ">
+                <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     Qui sommes-nous?
                 </h2>
-                <h2 className="text-center text-[26px] text-black font-bold ">
+                <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold ">
                     PhytoScience GABON LTD.
                 </h2>
             </div>
             <div className="flex flex-col justify-center bg-[#EAF7EB] md:flex-row md:px-[20px] md:gap-[100px] md:py-[50px]">
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center lg:w-[500px]">
                     <p className="text-black font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[15px]">
                         Phyto Science est une entreprise mondiale de santé et de
                         bien-être, à la pointe de l’innovation de produits et
@@ -205,7 +205,7 @@ const PresentationPhytoScience = () => {
                 <Image
                     src={team}
                     alt="Team phytoscience"
-                    className="object-cover h-[250px] w-full mt-[50px] mb-[25px] md:h-[150px] md:w-auto"
+                    className="object-cover h-[250px] w-full mt-[50px] lg:mt-[25px] mb-[25px] md:h-[150px] md:w-auto lg:h-[300px]"
                 />
             </div>
         </div>
@@ -216,16 +216,16 @@ const Presentation = () => {
     return (
         <div className="">
             <div className="my-[50px]">
-                <h2 className="text-center text-[16px] text-[#377A00] font-bold ">
+                <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     The GABON country Stokist
                 </h2>
-                <h2 className="text-center text-[26px] text-black font-bold px-[15%]">
+                <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold px-[15%]">
                     Thècle Valérie MPIGA Ep. HOLA
                 </h2>
             </div>
-            <div className="flex flex-col justify-center bg-[#C9F0CD] shadow-xl md:flex-row md:gap-[70px] md:px-[50px]">
+            <div className="flex flex-col justify-center bg-[#C9F0CD] shadow-xl md:flex-row md:gap-[70px] md:px-[50px] lg:px-[300px] lg:pb-[50px]">
                 <div className="flex flex-col justify-center">
-                    <p className="text-black text-center font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0]">
+                    <p className="text-black text-center font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0] lg:w-[500px]">
                         Chez PhytoScience, nous nous engageons à offrir des
                         produits de bien-être innovants et naturels, conçus pour
                         améliorer la santé et la qualité de vie de chacun.
@@ -240,7 +240,7 @@ const Presentation = () => {
                 <Image
                     src={mpiga}
                     alt="Photo de madame Mpiga"
-                    className="object-cover h-[400px] w-[300px] mt-[50px] mb-[100px] mx-auto"
+                    className="object-cover h-[400px] w-[300px] mt-[50px] mb-[100px] mx-auto lg:h-[450px] lg:w-auto"
                 />
             </div>
         </div>
@@ -249,7 +249,7 @@ const Presentation = () => {
 
 const Actualites = () => {
     return (
-        <div className="bg-white flex flex-col justify-center py-[40px] mx-[8%] relative top-[-50px] rounded-[15px] shadow-xl">
+        <div className="bg-white flex flex-col justify-center py-[40px] mx-[8%] lg:mx-[25%] relative top-[-50px] lg:top-[-100px] rounded-[15px] shadow-xl">
             <h2 className="text-[20px] font-bold text-center px-[60px] mb-[10px]">
                 Soyez à jour sur notre fil d’actualité
             </h2>
@@ -264,7 +264,7 @@ const Actualites = () => {
 
 const CelluleSouche = () => {
     return (
-        <div className="px-[8%] md:px-[4%] mb-[50px] md:flex md:flex-row md:gap-[50px] md:items-center">
+        <div className="px-[8%] md:px-[4%] mb-[50px] lg:mb-[100px] md:flex md:flex-row md:gap-[50px] md:items-center">
             <Image
                 src={cellule}
                 alt="Team phytoscience"
@@ -280,7 +280,7 @@ const CelluleSouche = () => {
                     </h2>
                 </div>
 
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center lg:block">
                     <p className="text-black font-regular text-[18px] mb-[30px]">
                         Phyto Science est une entreprise mondiale de santé et de
                         bien-être, à la pointe de l’innovation de produits et
@@ -298,14 +298,14 @@ const OffreService = () => {
     return (
         <div className="bg-[#D0EBCF] px-[8%] md:px-[3%] pb-[70px]">
             <div className="pt-[50px]">
-                <h2 className="text-center text-[16px] text-[#377A00] font-bold  ">
+                <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold  ">
                     Nos offres de services exclusives
                 </h2>
-                <h2 className="text-center text-[26px] text-black font-bold mb-[25px]">
+                <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold mb-[25px]">
                     Services Principaux
                 </h2>
             </div>
-            <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px]">
+            <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px] lg:px-[20%] lg:gap-[25px]">
                 {/* Card 1 */}
                 <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
                     <Image
@@ -368,10 +368,10 @@ const Temoignage = () => {
     return (
         <div className="mb-[50px]">
             <div className="my-[50px]">
-                <h2 className="text-center text-[16px] text-[#377A00] font-bold ">
+                <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     Témoignages Vérifiés
                 </h2>
-                <h2 className="text-center text-[26px] px-[20px] text-black font-bold ">
+                <h2 className="text-center text-[26px] lg:text-[35px] px-[20px] text-black font-bold ">
                     Découvrez les différents récits
                 </h2>
             </div>
@@ -411,10 +411,10 @@ const Produits = () => {
     return (
         <div className="mb-[80px]">
             <div className="my-[50px]">
-                <h2 className="text-center text-[16px] text-[#377A00] font-bold mb-[5px]">
+                <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold mb-[5px]">
                     Nos Produits
                 </h2>
-                <h2 className="text-center text-[26px] text-black font-bold px-[10px] leading-[26px]">
+                <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold px-[10px] leading-[26px]">
                     100% Bio à base de cellule souche
                 </h2>
             </div>
@@ -435,7 +435,7 @@ const Produits = () => {
                                 <Image
                                     src={nuforte}
                                     alt="Image NuForte"
-                                    className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto h-[300px] w-auto"
+                                    className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto h-[300px] w-auto lg:h-[400px]"
                                 />
                             </div>
                             {/* <!-- Item 2 --> */}
@@ -446,7 +446,7 @@ const Produits = () => {
                                 <Image
                                     src={nulite}
                                     alt="Image NuLite"
-                                    className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto h-[300px] w-auto"
+                                    className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto h-[300px] w-auto lg:h-[400px]"
                                 />
                             </div>
                             {/* <!-- Item 3 --> */}
@@ -457,7 +457,7 @@ const Produits = () => {
                                 <Image
                                     src={snowphy}
                                     alt="Image Snowphy"
-                                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto"
+                                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto lg:h-[300px]"
                                 />
                             </div>
                             {/* <!-- Item 4 --> */}
@@ -468,7 +468,7 @@ const Produits = () => {
                                 <Image
                                     src={iiQ}
                                     alt="Image iiG Plus"
-                                    className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[400px] md:w-auto h-[240px] w-auto"
+                                    className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[400px] md:w-auto h-[240px] w-auto lg:h-[300px]"
                                 />
                             </div>
                         </div>
@@ -555,9 +555,9 @@ const Produits = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-[50px] flex flex-col md:mt-[250px] md:flex-row md:items-center md:justify-between">
+            <div className="my-[50px] flex flex-col md:mt-[250px] md:flex-row md:items-center md:justify-between lg:mx-[15%]">
                 <div className="md:w-[70%]">
-                    <h2 className="md:text-left text-center text-[26px] text-black font-bold px-[10px] md:px-0 leading-[26px] ">
+                    <h2 className="text-center md:text-left  text-[26px] text-black font-bold px-[10px] md:px-0 leading-[26px]">
                         Produits phytoscience
                     </h2>
                     <p className="md:text-left text-black text-center font-regular text-[20px] mb-[30px] px-[30px] md:px-0 pt-[20px] md:pl-[30px]">
@@ -578,10 +578,10 @@ const Produits = () => {
 const RevolutionTechnologique = () => {
     return (
         <div className="bg-[#377A00] flex flex-col justify-center py-[40px] mx-[5%] rounded-[15px] shadow-xl">
-            <h2 className="text-white text-[26px] font-bold text-center px-[10px] mb-[10px]">
+            <h2 className="text-white text-[26px] lg:text-[32px] font-bold text-center px-[10px] mb-[10px]">
                 Rejoignez la Révolution Biotechnologique
             </h2>
-            <p className="text-white font-regular text-[18px] leading-[23.3px] text-center px-[40px] mb-[30px]">
+            <p className="text-white font-regular text-[18px] leading-[23.3px] text-center px-[40px] mb-[30px] lg:px-[30%]">
                 Contactez-nous dès aujourd’hui pour découvrir comment nos
                 traitements par cellules souches peuvent vous aider.
             </p>
@@ -601,10 +601,10 @@ const Localisation = () => {
     return (
         <div>
             <div className="mt-[70px] mb-[30px] flex flex-col">
-                <h2 className="text-center text-[26px] text-black font-bold px-[30px] leading-[26px]">
+                <h2 className="text-center text-[26px] lg:text-[32px] text-black font-bold px-[30px] leading-[26px]">
                     Découvrez notre magasin en personne!
                 </h2>
-                <p className="text-black text-center font-regular text-[18px] px-[30px] pt-[20px]">
+                <p className="text-black text-center font-regular text-[18px] px-[30px] pt-[20px] lg:px-[30%]">
                     Utilisez la carte interactive sur notre site pour trouver
                     facilement notre emplacement et profiter d’une expérience
                     d’achat exceptionnelle.
