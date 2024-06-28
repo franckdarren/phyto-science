@@ -556,7 +556,7 @@ const Produits = () => {
                 </div>
             </div>
             <div className="my-[50px] flex flex-col md:mt-[250px] md:flex-row md:items-center md:justify-between lg:mx-[15%]">
-                <div className="md:w-[70%]">
+                <div className="md:w-[60%]">
                     <h2 className="text-center md:text-left  text-[26px] text-black font-bold px-[10px] md:px-0 leading-[26px]">
                         Produits phytoscience
                     </h2>
@@ -568,7 +568,6 @@ const Produits = () => {
                 <Button
                     text="Voir plus de produits"
                     route={"/produits"}
-                    className="md:mx-0"
                 />
             </div>
         </div>
@@ -589,6 +588,7 @@ const RevolutionTechnologique = () => {
             {/* Bouton personalisé */}
             <Link
                 href="https://wa.me/+24107676213"
+                target="_blank"
                 class="text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
             >
                 Nous contacter via Whatsapp
