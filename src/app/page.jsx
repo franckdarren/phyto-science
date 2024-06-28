@@ -556,7 +556,7 @@ const Produits = () => {
                 </div>
             </div>
             <div className="my-[50px] flex flex-col md:mt-[250px] md:flex-row md:items-center md:justify-between lg:mx-[15%]">
-                <div className="md:w-[60%]">
+                <div className="md:w-[70%]">
                     <h2 className="text-center md:text-left  text-[26px] text-black font-bold px-[10px] md:px-0 leading-[26px]">
                         Produits phytoscience
                     </h2>
@@ -566,7 +566,7 @@ const Produits = () => {
                     </p>
                 </div>
                 <Button
-                    text="Voir plus de produits"
+                    text="Voir les produits"
                     route={"/produits"}
                 />
             </div>
