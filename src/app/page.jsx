@@ -323,30 +323,30 @@ export default function Accueil() {
                     </h2>
                 </div>
                 <div className="">
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-2 gap-2 lg:px-[200px] px-[2%]">
                         {/* Témoignage 1 */}
                         <Image
                             src={temoignage1}
                             alt="Image traitement"
-                            className="h-auto max-w-full rounded-lg"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg"
                         />
                         {/* Témoignage 2 */}
                         <Image
                             src={temoignage2}
                             alt="Image traitement"
-                            className="h-auto max-w-full rounded-lg"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg"
                         />
                         {/* Témoignage 3 */}
                         <Image
                             src={temoignage3}
                             alt="Image traitement"
-                            className="h-auto max-w-full rounded-lg"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg"
                         />
                         {/* Témoignage 4 */}
                         <Image
                             src={temoignage4}
                             alt="Image traitement"
-                            className="h-auto max-w-full rounded-lg"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg"
                         />
                     </div>
                 </div>
