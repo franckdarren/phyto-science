@@ -214,7 +214,7 @@ const PresentationPhytoScience = () => {
 
 const Presentation = () => {
     return (
-        <div className="">
+        <div className="" id="a-propos">
             <div className="my-[50px]">
                 <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     The GABON country Stokist
@@ -235,7 +235,6 @@ const Presentation = () => {
                         de votre attention et de votre intérêt pour nos
                         produits…
                     </p>
-                    <Button text="Lire la suite" route={"/a-propos"} />
                 </div>
                 <Image
                     src={mpiga}

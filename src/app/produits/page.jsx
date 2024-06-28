@@ -18,7 +18,7 @@ export default function Produits() {
                 <h2 className="text-[26px] text-black font-bold mb-[20px] ">
                     Tous les Produits
                 </h2>
-                <div className="flex flex-col items-center justify-center gap-[50px] md:grid md:grid-cols-3">
+                <div className="flex flex-col items-center justify-center gap-[50px] md:grid md:grid-cols-2 lg:grid-cols-3">
                     {/* Produit 1 */}
                     <CardProduit
                         nomProduit={"SnowPhyllForte"}
