@@ -4,13 +4,13 @@ import africa from "../../../public/assets/africa.png";
 export default function Temoignages() {
     return (
         <>
-            <div className="flex flex-col justify-center my-[50px] md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 mx-[3%]">
+            <div className="flex flex-col justify-center my-[50px] md:grid md:grid-cols-2 gap-[30px] md:gap-6 lg:grid-cols-3 mx-[3%]">
                 {/* Actualité 1 */}
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto">
                     <Image
                         src={africa}
                         alt="Produit"
-                        className="object-cover h-[240px] w-auto mx-auto"
+                        className="object-cover h-[240px] w-auto mx-auto rounded-t-lg"
                     />
                     <div class="p-5">
                         <a href="#">
@@ -52,7 +52,7 @@ export default function Temoignages() {
                     <Image
                         src={africa}
                         alt="Produit"
-                        className="object-cover h-[240px] w-auto mx-auto"
+                        className="object-cover h-[240px] w-auto mx-auto rounded-t-lg"
                     />
                     <div class="p-5">
                         <a href="#">
@@ -94,7 +94,7 @@ export default function Temoignages() {
                     <Image
                         src={africa}
                         alt="Produit"
-                        className="object-cover h-[240px] w-auto mx-auto"
+                        className="object-cover h-[240px] w-auto mx-auto rounded-t-lg"
                     />
                     <div class="p-5">
                         <a href="#">

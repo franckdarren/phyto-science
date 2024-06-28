@@ -12,6 +12,10 @@ import snowphy from "../../public/assets/SnowPhyllForte.png";
 import Link from "next/link";
 import logo from "../../public/assets/logo phyto.png";
 import certificat from "../../public/assets/certificat.jpg";
+import iiQ from "../../public/assets/iiQ-plus.jpg";
+import bienvenue from "../../public/assets/bienvenue.png";
+import baniereMpiga from "../../public/assets/mpiga-baniere.png";
+import banniere from "../../public/assets/banniere.png";
 
 export default function Accueil() {
     return (
@@ -30,8 +34,8 @@ export default function Accueil() {
                             data-carousel-item
                         >
                             <Image
-                                src={mpiga}
-                                alt="Photo de madame Mpiga"
+                                src={bienvenue}
+                                alt="Banière"
                                 className="object-fill absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             />
                         </div>
@@ -41,8 +45,8 @@ export default function Accueil() {
                             data-carousel-item
                         >
                             <Image
-                                src={mpiga}
-                                alt="Photo de madame Mpiga"
+                                src={baniereMpiga}
+                                alt="Banière madame Mpiga"
                                 className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             />
                         </div>
@@ -52,18 +56,7 @@ export default function Accueil() {
                             data-carousel-item
                         >
                             <Image
-                                src={mpiga}
-                                alt="Photo de madame Mpiga"
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            />
-                        </div>
-                        {/* <!-- Item 4 --> */}
-                        <div
-                            class="hidden duration-700 ease-in-out"
-                            data-carousel-item
-                        >
-                            <Image
-                                src={mpiga}
+                                src={banniere}
                                 alt="Photo de madame Mpiga"
                                 className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             />
@@ -91,13 +84,6 @@ export default function Accueil() {
                             aria-current="false"
                             aria-label="Slide 3"
                             data-carousel-slide-to="2"
-                        ></button>
-                        <button
-                            type="button"
-                            class="w-3 h-3 rounded-full"
-                            aria-current="false"
-                            aria-label="Slide 4"
-                            data-carousel-slide-to="3"
                         ></button>
                     </div>
                     {/* <!-- Slider controls --> */}
@@ -164,7 +150,7 @@ export default function Accueil() {
                 </div>
                 <div className="flex flex-col justify-center bg-[#EAF7EB] md:flex-row md:px-[20px] md:gap-[100px] md:py-[50px]">
                     <div className="flex flex-col justify-center">
-                        <p className="text-black font-regular text-[20px] mb-[30px] px-[5%] md:px-[0] pt-[15px]">
+                        <p className="text-black font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[15px]">
                             Phyto Science est une entreprise mondiale de santé
                             et de bien-être, à la pointe de l’innovation de
                             produits et engagée à aider les gens à prendre le
@@ -192,7 +178,7 @@ export default function Accueil() {
                 </div>
                 <div className="flex flex-col justify-center bg-[#C9F0CD] shadow-xl md:flex-row md:gap-[70px] md:px-[50px]">
                     <div className="flex flex-col justify-center">
-                        <p className="text-black text-center font-regular text-[20px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0]">
+                        <p className="text-black text-center font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0]">
                             Chez PhytoScience, nous nous engageons à offrir des
                             produits de bien-être innovants et naturels, conçus
                             pour améliorer la santé et la qualité de vie de
@@ -244,7 +230,7 @@ export default function Accueil() {
                     </div>
 
                     <div className="flex flex-col justify-center">
-                        <p className="text-black font-regular text-[20px] mb-[30px]">
+                        <p className="text-black font-regular text-[18px] mb-[30px]">
                             Phyto Science est une entreprise mondiale de santé
                             et de bien-être, à la pointe de l’innovation de
                             produits et engagée à aider les gens à prendre le
@@ -361,8 +347,8 @@ export default function Accueil() {
                                 >
                                     <Image
                                         src={nuforte}
-                                        alt="Photo de madame Mpiga"
-                                        className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="Image NuForte"
+                                        className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto"
                                     />
                                 </div>
                                 {/* <!-- Item 2 --> */}
@@ -372,8 +358,8 @@ export default function Accueil() {
                                 >
                                     <Image
                                         src={nulite}
-                                        alt="Photo de madame Mpiga"
-                                        className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="Image NuLite"
+                                        className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto"
                                     />
                                 </div>
                                 {/* <!-- Item 3 --> */}
@@ -383,8 +369,8 @@ export default function Accueil() {
                                 >
                                     <Image
                                         src={snowphy}
-                                        alt="Photo de madame Mpiga"
-                                        className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        alt="Image Snowphy"
+                                        className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[500px] md:w-auto"
                                     />
                                 </div>
                                 {/* <!-- Item 4 --> */}
@@ -393,9 +379,9 @@ export default function Accueil() {
                                     data-carousel-item
                                 >
                                     <Image
-                                        src={mpiga}
-                                        alt="Photo de madame Mpiga"
-                                        className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                        src={iiQ}
+                                        alt="Image iiG Plus"
+                                        className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 md:h-[400px] md:w-auto"
                                     />
                                 </div>
                             </div>
@@ -504,7 +490,7 @@ export default function Accueil() {
                 <h2 className="text-white text-[26px] font-bold text-center px-[10px] mb-[10px]">
                     Rejoignez la Révolution Biotechnologique
                 </h2>
-                <p className="text-white font-regular text-[15.5px] leading-[23.3px] text-center px-[40px] mb-[30px]">
+                <p className="text-white font-regular text-[18px] leading-[23.3px] text-center px-[40px] mb-[30px]">
                     Contactez-nous dès aujourd’hui pour découvrir comment nos
                     traitements par cellules souches peuvent vous aider.
                 </p>
@@ -524,7 +510,7 @@ export default function Accueil() {
                     <h2 className="text-center text-[26px] text-black font-bold px-[30px] leading-[26px]">
                         Découvrez notre magasin en personne!
                     </h2>
-                    <p className="text-black text-center font-regular text-[20px] px-[30px] pt-[20px]">
+                    <p className="text-black text-center font-regular text-[18px] px-[30px] pt-[20px]">
                         Utilisez la carte interactive sur notre site pour
                         trouver facilement notre emplacement et profiter d’une
                         expérience d’achat exceptionnelle.

@@ -4,7 +4,7 @@ import product from "../../../public/assets/product-nutrition-removebg-preview.p
 export default function Actualites() {
     return (
         <>
-            <div className="flex flex-col justify-center my-[50px] md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 mx-[3%]">
+            <div className="flex flex-col justify-center my-[50px] md:grid md:grid-cols-2 gap-[30px] md:gap-6 lg:grid-cols-3 mx-[3%]">
                 {/* Actualité 1 */}
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow mx-auto">
                     <Image
