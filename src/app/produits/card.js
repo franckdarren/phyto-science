@@ -25,13 +25,13 @@ const CardProduit = ({ nomProduit, imageProduit, description }) => {
                 {/* Modal */}
                 <Button
                     onClick={() => setOpenModal(true)}
-                    className="text-black hover:bg-[#377A00] hover:text-white font-medium rounded-lg text-sm px-5 text-center mx-auto mb-[10px]"
+                    className="text-black hover:bg-[#377A00] hover:text-white font-medium rounded-lg text-sm px-5 text-center mx-auto mb-[10px] "
                 >
                     Cliquer pour voir les détails
                 </Button>
                 <Modal show={openModal} onClose={() => setOpenModal(false)}>
                     <Modal.Header>
-                        Détail du produit - {nomProduit}
+                        Détails
                     </Modal.Header>
                     <Modal.Body>
                         <div className="space-y-6">
