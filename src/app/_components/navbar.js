@@ -49,7 +49,7 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="/"
-                                className="block py-2 px-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                                className="block py-2 px-3  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#377A00] md:p-0 "
                                 aria-current="page"
                             >
                                 Accueil
@@ -58,7 +58,7 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="/produits"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#377A00] md:p-0 "
                             >
                                 Produits
                             </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="/temoignages"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#377A00] md:p-0 "
                             >
                                 Témoignages
                             </a>
@@ -74,19 +74,19 @@ export default function Navbar() {
                         <li>
                             <a
                                 href="/actualites"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#377A00] md:p-0 "
                             >
                                 Actualités
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a
                                 href="#a-propos"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#377A00] md:p-0 "
                             >
                                 A propos
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
