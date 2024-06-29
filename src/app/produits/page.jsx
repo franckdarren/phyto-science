@@ -1,108 +1,40 @@
+"use client";
+
 import Image from "next/image";
-import snowphyllforte from "../../../public/assets/SnowPhyllForte.png";
-import actual from "../../../public/assets/actual+.jpg";
-import crystal from "../../../public/assets/crystal-cell.jpg";
-import NuForte from "../../../public/assets/NuForte.jpg";
-import NuLite from "../../../public/assets/NuLite.jpg";
-import iiQ from "../../../public/assets/iiQ-plus.jpg";
-import double from "../../../public/assets/double-stemcell.png";
-import triple3 from "../../../public/assets/triple3.jpg";
-import h20 from "../../../public/assets/h20.png";
+import { useState } from "react";
+
 import CardProduit from "./card";
 import PreFooter from "../_components/pre-footer";
 
 export default function Produits() {
+    const data = [
+        { id: 1, nom: "SnowPhyllForte", image: "/assets/SnowPhyllForte.png", description: "Test 1" },
+        { id: 2, nom: "Actual+", image: "/assets/actual+.jpg", description: "Test 2" },
+        { id: 3, nom: "Cristall Cell", image: "/assets/crystal-cell.jpg", description: "Test 3" },
+        { id: 4, nom: "NuForte", image: "/assets/NuForte.jpg", description: "Test 4" },
+        { id: 5, nom: "NuLite", image: "/assets/NuLite.jpg", description: "Test 5" },
+        { id: 6, nom: "iiQ Plus", image: "/assets/iiQ-plus.jpg", description: "Test 6" },
+        { id: 7, nom: "Double Stemcell", image: "/assets/double-stemcell.png", description: "Test 7" },
+        { id: 8, nom: "Trible 3", image: "/assets/triple3.jpg", description: "Test 8" },
+        { id: 9, nom: "H20", image: "/assets/h20.png", description: "Test 9" },
+    ];
+
     return (
-        <>
-            <div className="my-[50px] px-[5%]">
-                <h2 className="text-[26px] text-black font-bold mb-[20px] ">
-                    Tous les Produits
-                </h2>
-                <div className="flex flex-col items-center justify-center gap-[50px] md:grid md:grid-cols-2 lg:grid-cols-3">
-                    {/* Produit 1 */}
+        <div className="my-[50px] px-[5%]">
+            <h2 className="text-[26px] text-black font-bold mb-[20px] ">
+                Tous les Produits
+            </h2>
+            <div className="flex flex-col items-center justify-center gap-[50px] md:grid md:grid-cols-2 lg:grid-cols-3">
+                {/* Liste des produits */}
+                {data.map((product) => (
                     <CardProduit
-                        nomProduit={"SnowPhyllForte"}
-                        imageProduit={snowphyllforte}
-                        description="Test 1"
+                        key={product.id}
+                        nomProduit={product.nom}
+                        imageProduit={product.image}
+                        description={product.description}
                     />
-
-                    {/* Produit 2 */}
-                    {/* <div className="shadow-2xl h-[280px] w-full rounded-xl">
-                        <p className="font-light text-[20px] text-center text-white bg-[#377A00] inline-block px-[15px] rounded-full relative left-[10px] top-[5px]">
-                            Actual+
-                        </p>
-                        <Image
-                            src={actual}
-                            alt="Produit snowphyllforte"
-                            className="object-cover h-[240px] w-auto mx-auto"
-                        />
-                    </div> */}
-                    <CardProduit
-                        nomProduit={"Actual+"}
-                        imageProduit={actual}
-                        description="Test 2"
-                    />
-
-                    {/* Produit 3 */}
-                    <CardProduit
-                        nomProduit={"Cristall Cell"}
-                        imageProduit={crystal}
-                        description="Test 3"
-                    />
-
-                    {/* Produit 4 */}
-                    <CardProduit
-                        nomProduit={"NuForte"}
-                        imageProduit={NuForte}
-                        description="Test 4"
-                    />
-
-                    {/* Produit 5 */}
-                    <CardProduit
-                        nomProduit={"NuLite"}
-                        imageProduit={NuLite}
-                        description="Test 5"
-                    />
-
-                    {/* Produit 6 */}
-                    {/* <div className="shadow-2xl h-[280px] w-full rounded-xl">
-                        <p className="font-light text-[20px] text-center text-white bg-[#377A00] inline-block px-[15px] rounded-full relative left-[10px] top-[5px]">
-                            iiQ Plus+
-                        </p>
-                        <Image
-                            src={iiQ}
-                            alt="Produit snowphyllforte"
-                            className="object-cover h-[240px] w-auto mx-auto"
-                        />
-                    </div> */}
-                    <CardProduit
-                        nomProduit={"iiQ Plus"}
-                        imageProduit={iiQ}
-                        description="Test 6"
-                    />
-
-                    {/* Produit 7 */}
-                    <CardProduit
-                        nomProduit={"Double Stemcell"}
-                        imageProduit={double}
-                        description="Test 7"
-                    />
-
-                    {/* Produit 8 */}
-                    <CardProduit
-                        nomProduit={"Trible 3"}
-                        imageProduit={triple3}
-                        description="Test 8"
-                    />
-
-                    {/* Produit 9 */}
-                    <CardProduit
-                        nomProduit={"H20"}
-                        imageProduit={h20}
-                        description="Test 9"
-                    />
-                </div>
+                ))}
             </div>
-        </>
+        </div>
     );
 }
