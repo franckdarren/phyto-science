@@ -247,7 +247,7 @@ const Presentation = () => {
 
 const Actualites = () => {
     return (
-        <div className="bg-white flex flex-col justify-center py-[40px] mx-[8%] lg:mx-[25%] relative top-[-50px] lg:top-[-100px] rounded-[15px] shadow-xl">
+        <div className="bg-white flex flex-col justify-center py-[40px] mx-[8%] lg:mx-[25%] relative top-[-50px] lg:top-[-100px] rounded-[15px] shadow-xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200">
             <h2 className="text-[20px] font-bold text-center px-[60px] mb-[10px]">
                 Soyez à jour sur notre fil d’actualité
             </h2>
@@ -255,7 +255,7 @@ const Actualites = () => {
                 Explorez notre science innovante des cellules souches végétales
                 pour traiter les pathologies lourdes et bien plus encore.
             </p>
-            <Button text="En savoir plus" route={"/actualites"} className="" />
+            <Button text="En savoir plus" route={"/actualites"} />
         </div>
     );
 };
@@ -305,7 +305,7 @@ const OffreService = () => {
             </div>
             <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px] lg:px-[15%] lg:gap-[25px]">
                 {/* Card 1 */}
-                <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
+                <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200">
                     <Image
                         src={traitement}
                         alt="Image traitement"
@@ -323,7 +323,7 @@ const OffreService = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="w-[95%]md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
+                <div className="w-[95%]md:w-[100%] mx-auto bg-white rounded-lg shadow-xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200">
                     <Image
                         src={prevention}
                         alt="Image traitement"
@@ -341,7 +341,7 @@ const OffreService = () => {
                 </div>
 
                 {/* Card 3 */}
-                <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl">
+                <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200">
                     <Image
                         src={recherche}
                         alt="Image traitement"
@@ -589,7 +589,7 @@ const RevolutionTechnologique = () => {
             <Link
                 href="https://wa.me/+24107849012"
                 target="_blank"
-                class="text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
+                class="animate-bounce hover:animate-none text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
             >
                 Nous contacter via Whatsapp
             </Link>
