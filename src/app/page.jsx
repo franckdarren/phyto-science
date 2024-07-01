@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "./_components/button";
 import Image from "next/image";
 import team from "../../public/assets/equipe.png";
@@ -20,6 +22,8 @@ import temoignage1 from "../../public/assets/temoignage1.jpg";
 import temoignage2 from "../../public/assets/temoignage2.jpg";
 import temoignage3 from "../../public/assets/temoignage3.jpg";
 import temoignage4 from "../../public/assets/temoignage4.jpg";
+
+import { motion } from "framer-motion";
 
 export default function Accueil() {
     return (
@@ -184,22 +188,32 @@ const HeaderCarousel = () => {
 const PresentationPhytoScience = () => {
     return (
         <div className="">
-            <div className="my-[50px]">
+            <motion.div
+                className="my-[50px]"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+            >
                 <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     Qui sommes-nous?
                 </h2>
                 <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold ">
                     PhytoScience GABON LTD.
                 </h2>
-            </div>
+            </motion.div>
             <div className="flex flex-col justify-center bg-[#EAF7EB] md:flex-row md:px-[20px] md:gap-[100px] md:py-[50px]">
                 <div className="flex flex-col justify-center lg:w-[500px]">
-                    <p className="text-black font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[15px]">
+                    <motion.p
+                        className="text-black font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[15px]"
+                        initial={{ opacity: 0, scale: 1, x: -500 }}
+                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         Phyto Science est une entreprise mondiale de santé et de
                         bien-être, à la pointe de l’innovation de produits et
                         engagée à aider les gens à prendre le contrôle de leur
                         santé, tant physique que financier.
-                    </p>
+                    </motion.p>
                 </div>
                 <Image
                     src={team}
@@ -214,17 +228,27 @@ const PresentationPhytoScience = () => {
 const Presentation = () => {
     return (
         <div className="" id="a-propos">
-            <div className="my-[50px]">
+            <motion.div
+                className="my-[50px]"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+            >
                 <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     The GABON country Stokist
                 </h2>
                 <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold px-[15%]">
                     Thècle Valérie MPIGA Ep. HOLA
                 </h2>
-            </div>
+            </motion.div>
             <div className="flex flex-col justify-center bg-[#C9F0CD] shadow-xl md:flex-row md:gap-[70px] md:px-[50px] lg:px-[300px] lg:pb-[50px]">
                 <div className="flex flex-col justify-center">
-                    <p className="text-black text-center font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0] lg:w-[500px]">
+                    <motion.p
+                        className="text-black text-center font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0] lg:w-[500px]"
+                        initial={{ opacity: 0, scale: 1, x: -500 }}
+                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                    >
                         Chez PhytoScience, nous nous engageons à offrir des
                         produits de bien-être innovants et naturels, conçus pour
                         améliorer la santé et la qualité de vie de chacun.
@@ -233,12 +257,15 @@ const Presentation = () => {
                         solutions pour un avenir plus sain et équilibré. Merci
                         de votre attention et de votre intérêt pour nos
                         produits…
-                    </p>
+                    </motion.p>
                 </div>
-                <Image
-                    src={mpiga}
+                <motion.img
+                    src="assets/mme-mpiga.jpeg"
                     alt="Photo de madame Mpiga"
                     className="object-cover h-[400px] w-[300px] mt-[50px] mb-[100px] mx-auto lg:h-[450px] lg:w-auto"
+                    initial={{ opacity: 0, scale: 1.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6 }}
                 />
             </div>
         </div>
@@ -295,14 +322,19 @@ const CelluleSouche = () => {
 const OffreService = () => {
     return (
         <div className="bg-[#D0EBCF] px-[8%] md:px-[3%] pb-[70px]">
-            <div className="pt-[50px]">
+            <motion.div
+                className="pt-[50px]"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+            >
                 <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold  ">
                     Nos offres de services exclusives
                 </h2>
                 <h2 className="text-center text-[26px] lg:text-[35px] text-black font-bold mb-[25px]">
                     Services Principaux
                 </h2>
-            </div>
+            </motion.div>
             <div className="flex flex-col justify-center gap-[50px] md:grid md:grid-cols-3 md:gap-[10px] lg:px-[15%] lg:gap-[25px]">
                 {/* Card 1 */}
                 <div className="w-[95%] md:w-[100%] mx-auto bg-white rounded-lg shadow-xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200">
@@ -365,14 +397,19 @@ const OffreService = () => {
 const Temoignage = () => {
     return (
         <div className="mb-[50px]">
-            <div className="my-[50px]">
+            <motion.div
+                className="my-[50px]"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+            >
                 <h2 className="text-center text-[16px] lg:text-[20px] text-[#377A00] font-bold ">
                     Témoignages Vérifiés
                 </h2>
                 <h2 className="text-center text-[26px] lg:text-[35px] px-[20px] text-black font-bold ">
                     Découvrez les différents récits
                 </h2>
-            </div>
+            </motion.div>
             <div className="">
                 <div class="grid grid-cols-2 gap-2 lg:px-[200px] px-[2%]">
                     {/* Témoignage 1 */}
@@ -600,7 +637,12 @@ const RevolutionTechnologique = () => {
 const Localisation = () => {
     return (
         <div>
-            <div className="mt-[70px] mb-[30px] flex flex-col">
+            <motion.div
+                className="mt-[70px] mb-[30px] flex flex-col"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+            >
                 <h2 className="text-center text-[26px] lg:text-[32px] text-black font-bold px-[30px] leading-[26px]">
                     Découvrez notre magasin en personne!
                 </h2>
@@ -609,7 +651,7 @@ const Localisation = () => {
                     facilement notre emplacement et profiter d’une expérience
                     d’achat exceptionnelle.
                 </p>
-            </div>
+            </motion.div>
             <div className="h-[300px] md:h-[400px]">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d34846.70753050023!2d9.414189763506515!3d0.40919691942453285!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMjQnMzMuNyJOIDnCsDI2JzIxLjciRQ!5e1!3m2!1sfr!2sga!4v1719524659687!5m2!1sfr!2sga"
