@@ -205,8 +205,8 @@ const PresentationPhytoScience = () => {
                 <div className="flex flex-col justify-center lg:w-[500px]">
                     <motion.p
                         className="text-black font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[15px]"
-                        initial={{ opacity: 0, scale: 1, x: -500 }}
-                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        initial={{ opacity: 0, scale: 1 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6 }}
                     >
                         Phyto Science est une entreprise mondiale de santé et de
@@ -245,8 +245,8 @@ const Presentation = () => {
                 <div className="flex flex-col justify-center">
                     <motion.p
                         className="text-black text-center font-regular text-[18px] mb-[30px] px-[5%] md:px-[0] pt-[30px] md:pt-[0] lg:w-[500px]"
-                        initial={{ opacity: 0, scale: 1, x: -500 }}
-                        whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                        initial={{ opacity: 0, scale: 1 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6 }}
                     >
                         Chez PhytoScience, nous nous engageons à offrir des
