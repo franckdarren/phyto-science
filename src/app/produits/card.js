@@ -36,9 +36,6 @@ const CardProduit = ({ nomProduit, imageProduit, description }) => {
                     <Modal.Body>
                         <div className="space-y-6">
                         <div dangerouslySetInnerHTML={{ __html: description }} />
-                            {/* <p className="text-base leading-relaxed text-gray-900">
-                                {description}
-                            </p> */}
                         </div>
                     </Modal.Body>
                 </Modal>
