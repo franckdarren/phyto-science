@@ -263,8 +263,8 @@ const Presentation = () => {
                     src="assets/mme-mpiga.jpeg"
                     alt="Photo de madame Mpiga"
                     className="object-cover h-[400px] w-[300px] mt-[50px] mb-[100px] mx-auto lg:h-[450px] lg:w-auto"
-                    initial={{ opacity: 0, scale: 1.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6 }}
                 />
             </div>
