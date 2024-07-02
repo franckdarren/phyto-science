@@ -307,12 +307,14 @@ const CelluleSouche = () => {
 
                 <div className="flex flex-col justify-center lg:block">
                     <p className="text-black font-regular text-[18px] mb-[30px]">
-                        Phyto Science est une entreprise mondiale de santé et de
-                        bien-être, à la pointe de l’innovation de produits et
-                        engagée à aider les gens à prendre le contrôle de leur
-                        santé, tant physique que financier.
+                        Les cellules souches sont des cellules spéciales
+                        capables de se transformer en différents types de
+                        cellules du corps (comme des cellules musculaires,
+                        nerveuses, etc.) et de se renouveler. Elles sont
+                        cruciales pour la réparation et le remplacement des
+                        cellules endommagées, et ont un grand potentiel pour
+                        traiter diverses maladies.
                     </p>
-                    <Button text="Lire la suite" route={"/actualites"} />
                 </div>
             </div>
         </div>
