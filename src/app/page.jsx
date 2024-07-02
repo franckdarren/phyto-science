@@ -411,31 +411,39 @@ const Temoignage = () => {
                 </h2>
             </motion.div>
             <div className="">
-                <div className="grid grid-cols-2 gap-2 lg:px-[200px] px-[2%]">
+                <div className="grid grid-cols-2 gap-3 lg:px-[200px] px-[2%]">
                     {/* Témoignage 1 */}
-                    <Image
-                        src={temoignage1}
-                        alt="Image traitement"
-                        className="h-[150px] md:h-[300px] w-full rounded-lg"
-                    />
+                    <a href="/temoignages">
+                        <Image
+                            src={temoignage1}
+                            alt="Image traitement"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-200"
+                        />
+                    </a>
                     {/* Témoignage 2 */}
-                    <Image
-                        src={temoignage2}
-                        alt="Image traitement"
-                        className="h-[150px] md:h-[300px] w-full rounded-lg"
-                    />
+                    <a href="/temoignages">
+                        <Image
+                            src={temoignage2}
+                            alt="Image traitement"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-200"
+                        />
+                    </a>
                     {/* Témoignage 3 */}
-                    <Image
-                        src={temoignage3}
-                        alt="Image traitement"
-                        className="h-[150px] md:h-[300px] w-full rounded-lg"
-                    />
+                    <a href="/temoignages">
+                        <Image
+                            src={temoignage3}
+                            alt="Image traitement"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-200"
+                        />
+                    </a>
                     {/* Témoignage 4 */}
-                    <Image
-                        src={temoignage4}
-                        alt="Image traitement"
-                        className="h-[150px] md:h-[300px] w-full rounded-lg"
-                    />
+                    <a href="/temoignages">
+                        <Image
+                            src={temoignage4}
+                            alt="Image traitement"
+                            className="h-[150px] md:h-[300px] w-full rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105 duration-200"
+                        />
+                    </a>
                 </div>
             </div>
         </div>

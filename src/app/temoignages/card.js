@@ -1,12 +1,10 @@
 // "use client";
 import Image from "next/image";
 import { Button } from "flowbite-react";
-import data from "../data/temoignages.js"
+import data from "../data/temoignages.js";
 import Temoignages from "./page.jsx";
 
-const CardTemoignage = ({ imageTemoignage, description, titreTemoignage, idTemoignage }) => {
-
-
+const CardTemoignage = ({ imageTemoignage, titreTemoignage, idTemoignage }) => {
     return (
         <>
             <div className="shadow-2xl w-full rounded-xl">
@@ -24,10 +22,12 @@ const CardTemoignage = ({ imageTemoignage, description, titreTemoignage, idTemoi
                             {titreTemoignage}
                         </h5>
                     </a>
-                    <div dangerouslySetInnerHTML={{ __html: description }} className="mb-3 font-normal text-gray-700 ml-[20px]" />
                 </div>
 
-                <Button href={`/temoignages/${idTemoignage}`} className="text-[#377A00] md:hover:bg-[#377A00] md:hover:text-white font-medium rounded-lg text-sm px-5 text-center mx-auto mb-[10px] active:text-white w-[250px]">
+                <Button
+                    href={`/temoignages/${idTemoignage}`}
+                    className="text-[#377A00] md:hover:bg-[#377A00] md:hover:text-white font-medium rounded-lg text-sm px-5 text-center mx-auto mb-[10px] active:text-white w-[250px]"
+                >
                     Cliquer pour lire la suite
                 </Button>
             </div>
