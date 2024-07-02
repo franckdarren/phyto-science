@@ -18,9 +18,8 @@ export default function RootLayout({ children }) {
                 />
                 <link
                     rel="icon"
-                    href="/icon?<generated>"
-                    type="image/<generated>"
-                    sizes="<generated>"
+                    href="/icon"
+                    type="image"
                 />
             </head>
             <body>

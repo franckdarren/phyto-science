@@ -69,13 +69,13 @@ const HeaderCarousel = () => {
         <div className="">
             <div
                 id="default-carousel"
-                class="relative w-full"
+                className="relative w-full"
                 data-carousel="slide"
             >
-                <div class="relative h-56 overflow-hidden md:h-96">
+                <div className="relative h-56 overflow-hidden md:h-96">
                     {/* <!-- Item 1 --> */}
                     <div
-                        class="hidden duration-700 ease-in-out"
+                        className="hidden duration-700 ease-in-out"
                         data-carousel-item
                     >
                         <Image
@@ -86,7 +86,7 @@ const HeaderCarousel = () => {
                     </div>
                     {/* <!-- Item 2 --> */}
                     <div
-                        class="hidden duration-700 ease-in-out"
+                        className="hidden duration-700 ease-in-out"
                         data-carousel-item
                     >
                         <Image
@@ -97,7 +97,7 @@ const HeaderCarousel = () => {
                     </div>
                     {/* <!-- Item 3 --> */}
                     <div
-                        class="hidden duration-700 ease-in-out"
+                        className="hidden duration-700 ease-in-out"
                         data-carousel-item
                     >
                         <Image
@@ -108,24 +108,24 @@ const HeaderCarousel = () => {
                     </div>
                 </div>
                 {/* <!-- Slider indicators --> */}
-                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                     <button
                         type="button"
-                        class="w-3 h-3 rounded-full"
+                        className="w-3 h-3 rounded-full"
                         aria-current="true"
                         aria-label="Slide 1"
                         data-carousel-slide-to="0"
                     ></button>
                     <button
                         type="button"
-                        class="w-3 h-3 rounded-full"
+                        className="w-3 h-3 rounded-full"
                         aria-current="false"
                         aria-label="Slide 2"
                         data-carousel-slide-to="1"
                     ></button>
                     <button
                         type="button"
-                        class="w-3 h-3 rounded-full"
+                        className="w-3 h-3 rounded-full"
                         aria-current="false"
                         aria-label="Slide 3"
                         data-carousel-slide-to="2"
@@ -134,12 +134,12 @@ const HeaderCarousel = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                     type="button"
-                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-prev
                 >
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg
-                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -147,23 +147,23 @@ const HeaderCarousel = () => {
                         >
                             <path
                                 stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M5 1 1 5l4 4"
                             />
                         </svg>
-                        <span class="sr-only">Previous</span>
+                        <span className="sr-only">Previous</span>
                     </span>
                 </button>
                 <button
                     type="button"
-                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-next
                 >
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg
-                            class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
                             aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -171,13 +171,13 @@ const HeaderCarousel = () => {
                         >
                             <path
                                 stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="m1 9 4-4-4-4"
                             />
                         </svg>
-                        <span class="sr-only">Next</span>
+                        <span className="sr-only">Next</span>
                     </span>
                 </button>
             </div>
@@ -411,7 +411,7 @@ const Temoignage = () => {
                 </h2>
             </motion.div>
             <div className="">
-                <div class="grid grid-cols-2 gap-2 lg:px-[200px] px-[2%]">
+                <div className="grid grid-cols-2 gap-2 lg:px-[200px] px-[2%]">
                     {/* Témoignage 1 */}
                     <Image
                         src={temoignage1}
@@ -458,13 +458,13 @@ const Produits = () => {
                 <div className="">
                     <div
                         id="default-carousel"
-                        class="relative w-full"
+                        className="relative w-full"
                         data-carousel="slide"
                     >
-                        <div class="relative h-56 overflow-hidden md:h-96">
+                        <div className="relative h-56 overflow-hidden md:h-96">
                             {/* <!-- Item 1 --> */}
                             <div
-                                class="hidden duration-700 ease-in-out"
+                                className="hidden duration-700 ease-in-out"
                                 data-carousel-item
                             >
                                 <Image
@@ -475,7 +475,7 @@ const Produits = () => {
                             </div>
                             {/* <!-- Item 2 --> */}
                             <div
-                                class="hidden duration-700 ease-in-out"
+                                className="hidden duration-700 ease-in-out"
                                 data-carousel-item
                             >
                                 <Image
@@ -486,7 +486,7 @@ const Produits = () => {
                             </div>
                             {/* <!-- Item 3 --> */}
                             <div
-                                class="hidden duration-700 ease-in-out"
+                                className="hidden duration-700 ease-in-out"
                                 data-carousel-item
                             >
                                 <Image
@@ -497,7 +497,7 @@ const Produits = () => {
                             </div>
                             {/* <!-- Item 4 --> */}
                             <div
-                                class="hidden duration-700 ease-in-out"
+                                className="hidden duration-700 ease-in-out"
                                 data-carousel-item
                             >
                                 <Image
@@ -508,31 +508,31 @@ const Produits = () => {
                             </div>
                         </div>
                         {/* <!-- Slider indicators --> */}
-                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                             <button
                                 type="button"
-                                class="w-3 h-3 rounded-full"
+                                className="w-3 h-3 rounded-full"
                                 aria-current="true"
                                 aria-label="Slide 1"
                                 data-carousel-slide-to="0"
                             ></button>
                             <button
                                 type="button"
-                                class="w-3 h-3 rounded-full"
+                                className="w-3 h-3 rounded-full"
                                 aria-current="false"
                                 aria-label="Slide 2"
                                 data-carousel-slide-to="1"
                             ></button>
                             <button
                                 type="button"
-                                class="w-3 h-3 rounded-full"
+                                className="w-3 h-3 rounded-full"
                                 aria-current="false"
                                 aria-label="Slide 3"
                                 data-carousel-slide-to="2"
                             ></button>
                             <button
                                 type="button"
-                                class="w-3 h-3 rounded-full"
+                                className="w-3 h-3 rounded-full"
                                 aria-current="false"
                                 aria-label="Slide 4"
                                 data-carousel-slide-to="3"
@@ -541,12 +541,12 @@ const Produits = () => {
                         {/* <!-- Slider controls --> */}
                         <button
                             type="button"
-                            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                             data-carousel-prev
                         >
-                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                 <svg
-                                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                    className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
                                     aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -554,23 +554,23 @@ const Produits = () => {
                                 >
                                     <path
                                         stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
                                         d="M5 1 1 5l4 4"
                                     />
                                 </svg>
-                                <span class="sr-only">Previous</span>
+                                <span className="sr-only">Previous</span>
                             </span>
                         </button>
                         <button
                             type="button"
-                            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                             data-carousel-next
                         >
-                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                 <svg
-                                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                    className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
                                     aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -578,13 +578,13 @@ const Produits = () => {
                                 >
                                     <path
                                         stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
                                         d="m1 9 4-4-4-4"
                                     />
                                 </svg>
-                                <span class="sr-only">Next</span>
+                                <span className="sr-only">Next</span>
                             </span>
                         </button>
                     </div>
@@ -602,7 +602,7 @@ const Produits = () => {
                 </div>
                 <Link
                     href="/produits"
-                    class="text-white text-[15px] bg-[#377A00] hover:bg-[#65973c]  font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
+                    className="text-white text-[15px] bg-[#377A00] hover:bg-[#65973c]  font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
                 >
                     Voir plus de produits
                 </Link>
@@ -626,7 +626,7 @@ const RevolutionTechnologique = () => {
             <Link
                 href="https://wa.me/+24107849012"
                 target="_blank"
-                class="animate-bounce hover:animate-none text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
+                className="animate-bounce hover:animate-none text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
             >
                 Nous contacter via Whatsapp
             </Link>
@@ -659,9 +659,9 @@ const Localisation = () => {
                     className="w-full h-[300px] md:h-[400px]"
                     height=""
                     style={{ border: 0 }}
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
         </div>
@@ -685,7 +685,7 @@ const Contacts = () => {
             {/* Logo des reseaux sociaux */}
             <div className="flex justify-center">
                 {/* Facebook */}
-                <a href="#" class="inline-flex items-center">
+                <a href="#" className="inline-flex items-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="40px"
@@ -702,7 +702,7 @@ const Contacts = () => {
                 {/* Tiktok */}
                 <a
                     href="#"
-                    class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                    className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -761,7 +761,7 @@ const Contacts = () => {
                 viewBox="0 0 24 24"
                 className="mx-auto mt-[50px]"
             >
-                <g fill="none" stroke="currentColor" stroke-width="2">
+                <g fill="none" stroke="currentColor" strokeWidth="2">
                     <rect width="16" height="12" x="4" y="6" rx="2" />
                     <path d="m4 9l7.106 3.553a2 2 0 0 0 1.788 0L20 9" />
                 </g>

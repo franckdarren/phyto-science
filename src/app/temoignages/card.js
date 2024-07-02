@@ -20,14 +20,14 @@ const CardTemoignage = ({ imageTemoignage, description, titreTemoignage, idTemoi
                 />
                 <div>
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ml-[20px]">
+                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ml-[20px]">
                             {titreTemoignage}
                         </h5>
                     </a>
                     <div dangerouslySetInnerHTML={{ __html: description }} className="mb-3 font-normal text-gray-700 ml-[20px]" />
                 </div>
 
-                <Button href={`/temoignages/${idTemoignage}`} className="text-[#377A00] md:hover:bg-[#377A00] md:hover:text-white font-medium rounded-lg text-sm px-5 text-center mx-auto mb-[10px] active:text-white">
+                <Button href={`/temoignages/${idTemoignage}`} className="text-[#377A00] md:hover:bg-[#377A00] md:hover:text-white font-medium rounded-lg text-sm px-5 text-center mx-auto mb-[10px] active:text-white w-[250px]">
                     Cliquer pour lire la suite
                 </Button>
             </div>
