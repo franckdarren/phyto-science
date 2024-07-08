@@ -687,7 +687,8 @@ const Contacts = () => {
                 className="object-cover h-[100px] w-auto mx-auto"
             />
             <p className="text-black text-center font-regular text-[20px] pt-[30px]">
-                Lundi-vendredi: 9h - 17h
+                Lundi-vendredi: 9h - 17h <br />
+                Samedi: 9h - 14h
             </p>
             <p className="text-black text-center font-medium text-[20px] pt-[50px]">
                 Nos réseaux sociaux:
@@ -762,7 +763,7 @@ const Contacts = () => {
                 />
             </svg>
             <p className="text-black text-center font-regular text-[17px] pt-[5px]">
-                + 241 74 00 00 00
+                + 241 062 10 46 50
             </p>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
