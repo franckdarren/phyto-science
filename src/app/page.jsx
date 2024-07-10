@@ -15,7 +15,7 @@ import Link from "next/link";
 import logo from "../../public/assets/logo phyto.png";
 import certificat from "../../public/assets/certificat.jpg";
 import iiQ from "../../public/assets/iiQ-plus.jpg";
-import bienvenue from "../../public/assets/bienvenue.png";
+import bienvenue from "../../public/assets/bienvenue2.jpeg";
 import baniereMpiga from "../../public/assets/mpiga-baniere.png";
 import banniere from "../../public/assets/banniere.png";
 import temoignage1 from "../../public/assets/temoignage1.jpg";
