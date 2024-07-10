@@ -18,7 +18,7 @@ export default function Produits() {
         {
             id: 2,
             nom: "Actual+",
-            image: "/assets/actual+.jpg",
+            image: "/assets/actual+.jpeg",
             description:
                 "<p>La meilleur option qui vous aide à guérir et à récupérer de toutes les maladies, en particulier le diabète.<br>La meilleure façon de stimuler, de renforcer et de construire votre système immunitaire.</p>",
         },
@@ -39,21 +39,21 @@ export default function Produits() {
         {
             id: 5,
             nom: "NuLite",
-            image: "/assets/NuLite.jpg",
+            image: "/assets/NuLite.jpeg",
             description:
                 "<ul><li>- Selles régulières</li><li>- Soulager la constipation</li><li>- Soutenir la santé digestive</li><li>- Renforcer l’immunité</li><li>- Aide à la perte de poids</li><li>- La combustion des graisses</li><li>- Améliorer le taux de cholestérol</li><li>- Maintenir le contrôle de la glycémie</li></ul>",
         },
         {
             id: 6,
             nom: "iiQ Plus",
-            image: "/assets/iiQ-plus.jpg",
+            image: "/assets/iiQ-plus.jpeg",
             description:
                 "<p>AMÉLIORATION DE LA MÉMOIRE ET DE L’APPRENTISSAGE CHEZ L’ENFANT: Favorisez un meilleur rappel et une meilleure rétention de la mémoire pour améliorer vos compétences en communication, améliorer l’apprentissage et l’accès aux souvenirs.</p><br><p>AMÉLIORE LA CIRCULATION VASCULAIRE DES YEUX: Contient une variété de vitamines et de minéraux bénéfiques pour la santé des yeux qui peuvent améliorer la circulation sanguine globale autour des yeux.</p><br><p>DIMINUER LE RISQUE DE DÉMENCE CHEZ LES PERSONNES ÂGÉES: Une perte de mémoire et un déclin mental peuvent survenir en vieillissant. Boostez la puissance de votre cerveau et aiguisez la concentration.</p>",
         },
         {
             id: 7,
             nom: "Double Stemcell",
-            image: "/assets/double-stemcell.png",
+            image: "/assets/double-stemcell.jpeg",
             description:
                 "<ul><li>- La bonne circulation sanguine</li><li>- Stimule la régénération des cellules et réduit les cellules affectées à 86%</li><li>- Réduit les risques de prolifération des tumeurs grâce à sa teneur en polyphénols</li><li>- Régule l’index glycémique</li><li>- La présence de l’anthocyanine favorise le bon fonctionnement du cœur et régule le cholestérol</li><li>- Renforce le système immunitaire</li><li>- Booste l’énergie</li><li>- Améliore la digestion</li><li>- Prévient la régression oculaires et les rétinopathies Favorise la perte de poids</li><li>- Aide à la prévention des pathologies liées à l’insuffisance veineuse (Hémorroïdes, thrombose, artériosclérose, phlébite)</li><li>- Traite les infections urinaires grâce à ses propriétés antibiotiques.</li></ul>",
         },
@@ -66,7 +66,7 @@ export default function Produits() {
         },
         {
             id: 9,
-            nom: "H20 Stemcell",
+            nom: "H2O Stemcell",
             image: "/assets/h20.png",
             description:
                 "<p>- Réparation et recharge des cellules</p><p>- Effet anti-libres radicaux et anti-viellissement</p><p>- Anti UV</p><p>- Apaisant, hydratant, blanchissant, restaure, nourrir, egayer et raffermir</p><p>- Efface les rides et réduit</p>",
