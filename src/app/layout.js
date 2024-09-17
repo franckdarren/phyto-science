@@ -1,7 +1,7 @@
 import Navbar from "./_components/navbar";
 import Footer from "./_components/footer";
 import PreFooter from "./_components/pre-footer";
-
+import HotjarScript from "./_components/HotjarScript";
 export const metadata = {
     title: "PhytoScience",
     description:
@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body>
+            <HotjarScript />
                 <Navbar />
                 <div>{children}</div>
                 <PreFooter />

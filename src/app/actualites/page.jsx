@@ -1,12 +1,14 @@
 import Image from "next/image";
 import actualites from "../data/actualites";
 import Link from "next/link";
+import HotjarScript from "../_components/HotjarScript";
 
 export default function Actualites() {
     const lim = 90;
 
     return (
         <div className="my-[50px] px-[5%]">
+            <HotjarScript />
             <h2 className="text-[26px] text-black font-bold mb-[20px] ">
                 Actualités
             </h2>

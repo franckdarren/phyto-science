@@ -1,9 +1,11 @@
 import Image from "next/image";
 import imageArticle from "../../../../../public/assets/cellule.jpg"
+import HotjarScript from "@/app/_components/HotjarScript";
 
 export default function PageSeminaire() {
     return (
         <div>
+            <HotjarScript />
             <div class="max-w-screen-lg mx-auto">
                 <main class="mt-10">
                     <div class="mb-4 md:mb-0 w-full mx-auto relative">

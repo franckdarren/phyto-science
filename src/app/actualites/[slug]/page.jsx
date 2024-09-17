@@ -1,8 +1,10 @@
 import Image from "next/image";
+import HotjarScript from "@/app/_components/HotjarScript";
 
 export default function PageActualites() {
   return (
     <div className="px-[10%] py-[5%]">
+      <HotjarScript />
       <div className="py-5 md:py-12">
         <h1 className="font-bold text-[24px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias necessitatibus veniam mollitia vel, eum aut doloremque aspernatur. </h1>
         <h2 className="py-5 text-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nostrum velit tempora maxime vero nisi distinctio, voluptatem laborum cupiditate quasi, accusamus facere similique numquam dolores nam voluptatibus at necessitatibus dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h2>

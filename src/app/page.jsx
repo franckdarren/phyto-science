@@ -22,12 +22,13 @@ import temoignage1 from "../../public/assets/temoignage1.jpg";
 import temoignage2 from "../../public/assets/temoignage2.jpg";
 import temoignage3 from "../../public/assets/temoignage3.jpg";
 import temoignage4 from "../../public/assets/temoignage4.jpg";
-
+import HotjarScript from "./_components/HotjarScript";
 import { motion } from "framer-motion";
 
 export default function Accueil() {
     return (
         <>
+        <HotjarScript />
             {/* Header Carrousel */}
             <HeaderCarousel />
 
@@ -210,7 +211,7 @@ const PresentationPhytoScience = () => {
                         transition={{ duration: 0.6 }}
                     >
                         Phyto Science est une entreprise mondiale de santé et de
-                        bien-être, à la pointe de l’innovation de produits et
+                        bien-être, à la pointe de l&apos;innovation de produits et
                         engagée à aider les gens à prendre le contrôle de leur
                         santé, tant physique que financier.
                     </motion.p>
@@ -276,7 +277,7 @@ const Actualites = () => {
     return (
         <div className="bg-white flex flex-col justify-center py-[40px] mx-[8%] lg:mx-[25%] relative top-[-50px] lg:top-[-100px] rounded-[15px] shadow-xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-200">
             <h2 className="text-[20px] font-bold text-center px-[60px] mb-[10px]">
-                Soyez à jour sur notre fil d’actualité
+                Soyez à jour sur notre fil d&apos;actualité
             </h2>
             <p className="font-regular text-[15.5px] leading-[23.3px] text-center px-[40px] mb-[30px]">
                 Explorez notre science innovante des cellules souches végétales
@@ -298,7 +299,7 @@ const CelluleSouche = () => {
             <div>
                 <div className="mt-[40px] mb-[20px]">
                     <h2 className="text-[16px] text-[#377A00] font-bold ">
-                        QU’EST CE QUE
+                        QU&apos;EST CE QUE
                     </h2>
                     <h2 className="text-[26px] text-black font-bold ">
                         Les cellules souches ?
@@ -606,7 +607,7 @@ const Produits = () => {
                         Produits phytoscience
                     </h2>
                     <p className="md:text-left text-black text-center font-regular text-[20px] mb-[30px] px-[30px] md:px-0 pt-[20px] md:pl-[30px]">
-                        N’hésitez pas à en apprendre un peu plus sur les biens
+                        N&apos;hésitez pas à en apprendre un peu plus sur les biens
                         faits de nos différents produits.
                     </p>
                 </div>
@@ -628,7 +629,7 @@ const RevolutionTechnologique = () => {
                 Rejoignez la Révolution Biotechnologique
             </h2>
             <p className="text-white font-regular text-[18px] leading-[23.3px] text-center px-[40px] mb-[30px] lg:px-[30%]">
-                Contactez-nous dès aujourd’hui pour découvrir comment nos
+                Contactez-nous dès aujourd&apos;hui pour découvrir comment nos
                 traitements par cellules souches peuvent vous aider.
             </p>
 
@@ -658,8 +659,8 @@ const Localisation = () => {
                 </h2>
                 <p className="text-black text-center font-regular text-[18px] px-[30px] pt-[20px] lg:px-[30%]">
                     Utilisez la carte interactive sur notre site pour trouver
-                    facilement notre emplacement et profiter d’une expérience
-                    d’achat exceptionnelle.
+                    facilement notre emplacement et profiter d&apos;une expérience
+                    d&apos;achat exceptionnelle.
                 </p>
             </motion.div>
             <div className="h-[300px] md:h-[400px]">
@@ -696,7 +697,7 @@ const Contacts = () => {
             {/* Logo des reseaux sociaux */}
             <div className="flex justify-center">
                 {/* Facebook */}
-                <a href="#" className="inline-flex items-center">
+                <a href="https://www.facebook.com/profile.php?id=61562905713043" className="inline-flex items-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="40px"
@@ -762,8 +763,8 @@ const Contacts = () => {
                     d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"
                 />
             </svg>
-            <p className="text-black text-center font-regular text-[17px] pt-[5px]">
-                + 241 062 10 46 50
+            <p className="hover:text-blue-700 text-center font-regular text-[17px] pt-[5px]">
+                <a href="tel:+241062104650">+ 241 062 10 46 50</a>
             </p>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -777,8 +778,8 @@ const Contacts = () => {
                     <path d="m4 9l7.106 3.553a2 2 0 0 0 1.788 0L20 9" />
                 </g>
             </svg>
-            <p className="text-black text-center font-regular text-[17px] pt-[5px] pb-[50px]">
-                phytoscience@gmail.com
+            <p className="hover:text-blue-600 text-center font-regular text-[17px] pt-[5px] pb-[50px]">
+                <a href="mailto:phytoscience@gmail.com">phytoscience@gmail.com</a>
             </p>
             <div className="pb-[50px]">
                 <p className="text-black text-center font-medium text-[20px] pt-[5px] pb-[10px]">
