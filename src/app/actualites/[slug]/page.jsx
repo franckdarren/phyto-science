@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HotjarScript from "@/app/_components/HotjarScript";
+import HotjarScript from "../../_components/HotjarScript";
 
 export default function PageActualites() {
   return (
