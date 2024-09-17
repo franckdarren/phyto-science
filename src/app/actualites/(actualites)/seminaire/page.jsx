@@ -1,6 +1,6 @@
 import Image from "next/image";
 import imageArticle from "../../../../../public/assets/cellule.jpg"
-import HotjarScript from "@/app/_components/HotjarScript";
+import HotjarScript from "../../../_components/HotjarScript";
 
 export default function PageSeminaire() {
     return (
