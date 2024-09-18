@@ -2,8 +2,8 @@ const actualites = [
     {
         id: 1,
         titre: "Article 1",
-        image: "/assets/cellule.jpg",
-        resume: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        image: "/assets/celule.jpg",
+        resume: "BONJOUR  Une thérapie novatrice s'invite chez vous grâce au  Zoom conférence.",
         lien: "/actualites/seminaire",
         date: "17-08-2024"
     },
