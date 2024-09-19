@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
                 />
                 <title>PhytoScience</title>
             </head>
-            <body>
-                <HotjarScript />
+            <body className="min-h-screen flex flex-col justify-between ">
+            <HotjarScript />
                 <Navbar />
                 <div>{children}</div>
                 <PreFooter />
