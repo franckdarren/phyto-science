@@ -28,8 +28,8 @@ export default function PageActualites({ params }) {
     <div>
       <Head>
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content={actualite.title} />
-        <meta property="og:description" content={actualite.resume} />
+        <meta property="og:title" content={articleTitle} />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={actualite.image} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
