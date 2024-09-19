@@ -25,7 +25,7 @@ export default function Actualites() {
                             className="object-cover h-[240px] w-auto mx-auto"
                         />
                         <div className="p-5">
-                            <a href={actualite.lien}>
+                            <a href={`/actualites/${actualite.id}`}>
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                                     {actualite.titre}
                                 </h5>
@@ -34,7 +34,7 @@ export default function Actualites() {
                                 {actualite.resume.length>lim? actualite.resume.substring(0, lim) + "...": actualite.resume}
                             </p>
                             <Link
-                                href={actualite.lien}
+                                href={`/actualites/${actualite.id}`}
                                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#377A00] rounded-lg hover:bg-[#65973c]"
                             >
                                 Lire plus
