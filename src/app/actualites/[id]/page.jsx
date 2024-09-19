@@ -33,6 +33,8 @@ export default function PageActualites({ params }) {
         <meta property="og:image" content={actualite.image} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="PhytoScience Gabon" />
+        <meta property="og:locale" content="fr_FR" />
       </Head>
       <HotjarScript />
       <div className="max-w-screen-lg mx-auto">
