@@ -18,15 +18,14 @@ export default function RootLayout({ children }) {
         />
         <link rel="icon" href="/icon" type="image" />
       </head>
-      <body className="min-h-screen flex flex-col justify-between">
+      <body className="flex flex-col min-h-screen ">
         <HotjarScript />
-        <div>
+        
           <Navbar />
-          <div>{children}</div>
-        </div>
-
+          <div className="flex-grow">{children}</div>
         <PreFooter />
-        <Footer />
+        <Footer className="mt-auto" />
+        
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
           defer
