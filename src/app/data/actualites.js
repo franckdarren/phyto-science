@@ -1,7 +1,7 @@
 const actualites = [
     {
         id: 1,
-        titre: "Article 1",
+        titre: "Séminaire hebdomadaire",
         image: "/assets/celule.jpg",
         resume: "Une thérapie novatrice s'invite chez vous grâce au  Zoom conférence.",
         heure: "19h30",

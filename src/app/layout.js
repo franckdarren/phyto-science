@@ -9,30 +9,28 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    return (
-        <html lang="fr">
-            <head>
-                <link
-                    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
-                    rel="stylesheet"
-                />
-                <link
-                    rel="icon"
-                    href="/icon"
-                    type="image"
-                />
-            </head>
-            <body className="min-h-screen flex flex-col justify-between ">
-            <HotjarScript />
-                <Navbar />
-                <div>{children}</div>
-                <PreFooter />
-                <Footer />
-                <script
-                    src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
-                    defer
-                ></script>
-            </body>
-        </html>
-    );
+  return (
+    <html lang="fr">
+      <head>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="/icon" type="image" />
+      </head>
+      <body className="flex flex-col min-h-screen ">
+        <HotjarScript />
+        
+          <Navbar />
+          <div className="flex-grow">{children}</div>
+        <PreFooter />
+        <Footer className="mt-auto" />
+        
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"
+          defer
+        ></script>
+      </body>
+    </html>
+  );
 }
