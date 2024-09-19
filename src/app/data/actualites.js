@@ -3,14 +3,14 @@ const actualites = [
         id: 1,
         titre: "Article 1",
         image: "/assets/celule.jpg",
-        resume: "BONJOUR  Une thérapie novatrice s'invite chez vous grâce au  Zoom conférence.",
+        resume: "Une thérapie novatrice s'invite chez vous grâce au  Zoom conférence.",
         heure: "19h30",
         lien: "https://us02web.zoom.us/j/9227805479?pwd=OGtyaWF6NG1SaWplc1JaeVphMDFJUT09",
         date: "vendredi 20/09/2024",
         code: "000",
         mdp: "9227805479"
     }
-    // ,
+     ,
     // {
     //     id: 2,
     //     titre: "Article 2",

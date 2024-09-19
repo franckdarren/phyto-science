@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
                     type="image"
                 />
             </head>
-            <body>
+            <body className="min-h-screen flex flex-col justify-between ">
             <HotjarScript />
                 <Navbar />
                 <div>{children}</div>
