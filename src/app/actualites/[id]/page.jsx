@@ -57,7 +57,7 @@ export default function PageActualites({ params }) {
               </p>
 
               <p class="pb-6">
-                ⏰ 18h30 (Côte d'Ivoire, Togo , Burkina Faso , Sénégal ,
+                ⏰ 18h30 (Côte d&apos;Ivoire, Togo , Burkina Faso , Sénégal ,
                 Mali, Guinée Conakry , Guinée Bissau )
               </p>
 

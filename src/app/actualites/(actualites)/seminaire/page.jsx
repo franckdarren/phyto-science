@@ -6,7 +6,7 @@ export default function PageSeminaire() {
     return (
         <div>
             <HotjarScript />
-            <div class="max-w-screen-lg mx-auto">
+            {/* <div class="max-w-screen-lg mx-auto">
                 <main class="mt-10">
                     <div class="mb-4 md:mb-0 w-full mx-auto relative">
                         <div class="px-4 lg:px-0">
@@ -61,7 +61,7 @@ Code réunion: 9227805479
                         </div>
                     </div>
                 </main>
-            </div>
+            </div> */}
         </div>
     );
 }
