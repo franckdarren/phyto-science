@@ -1,22 +1,23 @@
+"use client";
+
+import { useEffect, useState } from 'react';
 import Image from "next/image";
 import HotjarScript from "../../_components/HotjarScript";
 import data from "../../data/actualites";
 import ShareButtons from '../../_components/ShareButtons';
-import { headers } from 'next/headers';
 
 export default function PageActualites({ params }) {
   const actualite = data.find(
     (actualite) => actualite.id === parseInt(params.id)
   );
 
-  const headersList = headers();
+  const [url, setUrl] = useState('');
 
-  const host = headersList.get('host');
-  const protocol = headersList.get('x-forwarded-proto') || 'https';
-
-  const path = headersList.get('x-invoke-path') || '';
-  const query = headersList.get('x-invoke-query') || '';
-  const articleUrl = `${protocol}://${host}${path}${query ? '?' + query : ''}`;
+  useEffect(() => {
+    // Récupérer l'URL complète côté client
+    const currentUrl = window.location.href;
+    setUrl(currentUrl);
+  }, []);
 
   const articleTitle = actualite.titre;
 
@@ -99,7 +100,7 @@ export default function PageActualites({ params }) {
 
           </div>
         </main>
-        <ShareButtons url={articleUrl} title={articleTitle} />
+        <ShareButtons url={url} title={articleTitle} />
 
       </div>
     </div>
