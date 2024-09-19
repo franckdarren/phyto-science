@@ -6,7 +6,7 @@ const actualites = [
         resume: "Une thérapie novatrice s'invite chez vous grâce au  Zoom conférence.",
         heure: "19h30",
         lien: "https://us02web.zoom.us/j/9227805479?pwd=OGtyaWF6NG1SaWplc1JaeVphMDFJUT09",
-        date: "vendredi 20/09/2024",
+        date: "Chaque Mardi et dimanche",
         code: "000",
         mdp: "9227805479"
     }
