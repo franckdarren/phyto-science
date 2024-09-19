@@ -5,6 +5,7 @@ import Image from "next/image";
 import HotjarScript from "../../_components/HotjarScript";
 import data from "../../data/actualites";
 import ShareButtons from '../../_components/ShareButtons';
+import Head from 'next/head';
 
 export default function PageActualites({ params }) {
   const actualite = data.find(
@@ -20,9 +21,19 @@ export default function PageActualites({ params }) {
   }, []);
 
   const articleTitle = actualite.titre;
+  const description = actualite.resume;
+
 
   return (
     <div>
+      <Head>
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={actualite.title} />
+        <meta property="og:description" content={actualite.resume} />
+        <meta property="og:image" content={actualite.image} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+      </Head>
       <HotjarScript />
       <div className="max-w-screen-lg mx-auto">
         <main className="mt-10">
@@ -100,7 +111,7 @@ export default function PageActualites({ params }) {
 
           </div>
         </main>
-        <ShareButtons url={url} title={articleTitle} />
+        <ShareButtons url={url} title={articleTitle} description={description} />
 
       </div>
     </div>

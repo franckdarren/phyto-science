@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ShareButtons = ({ url, title }) => {
+const ShareButtons = ({ url, title, description }) => {
     const facebookShare = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-    const whatsappShare = `https://api.whatsapp.com/send?text=${encodeURIComponent(title)} ${encodeURIComponent(url)}`;
+    const whatsappShare = `https://api.whatsapp.com/send?text=${encodeURIComponent(title)}%0A${encodeURIComponent(description)}%0A${encodeURIComponent(url)}`;
 
     return (
         <div className="flex gap-4 px-4 mb-5">
