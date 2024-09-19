@@ -10,10 +10,19 @@ export default function PageActualites({ params }) {
   );
 
   const headersList = headers();
-  const host = headersList.get('host'); // Récupère le domaine (e.g., example.com)
-  const protocol = headersList.get('x-forwarded-proto') || 'https'; // Récupère le protocole, souvent 'https'
+  const host = headersList.get('host');
+  const protocol = headersList.get('x-forwarded-proto') || 'https';
+  const referer = headersList.get('referer');
 
-  const articleUrl = `${protocol}://${host}`;
+  let articleUrl;
+
+  if (referer) {
+    articleUrl = referer;
+  } else {
+    articleUrl = `${protocol}://${host}${urlPath}`;
+  }
+  console.log(articleUrl);
+
   const articleTitle = actualite.titre;
 
   return (
@@ -37,9 +46,9 @@ export default function PageActualites({ params }) {
             <Image
               src={actualite.image}
               alt="image"
-              width={300}
-              height={100}
-              classNameName="object-cover w-[50%] mx-auto"
+              width={500}
+              height={500}
+              className="object-cover w-full h-[500px] mx-auto"
             ></Image>
           </div>
 
@@ -92,9 +101,11 @@ export default function PageActualites({ params }) {
                 et connaissances. Rien ne vaut la santé!!!
               </p>
             </div>
+
           </div>
         </main>
         <ShareButtons url={articleUrl} title={articleTitle} />
+
       </div>
     </div>
   );
