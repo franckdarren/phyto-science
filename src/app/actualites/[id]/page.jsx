@@ -10,18 +10,13 @@ export default function PageActualites({ params }) {
   );
 
   const headersList = headers();
+
   const host = headersList.get('host');
   const protocol = headersList.get('x-forwarded-proto') || 'https';
-  const referer = headersList.get('referer');
 
-  let articleUrl;
-
-  if (referer) {
-    articleUrl = referer;
-  } else {
-    articleUrl = `${protocol}://${host}${urlPath}`;
-  }
-  console.log(articleUrl);
+  const path = headersList.get('x-invoke-path') || '';
+  const query = headersList.get('x-invoke-query') || '';
+  const articleUrl = `${protocol}://${host}${path}${query ? '?' + query : ''}`;
 
   const articleTitle = actualite.titre;
 
