@@ -637,7 +637,7 @@ const RevolutionTechnologique = () => {
             <Link
                 href="https://wa.me/+24107849012"
                 target="_blank"
-                className="animate-bounce hover:animate-none text-[#377A00] text-[15px] bg-[#EFEFEF] hover:bg-[#65973c] hover:text-white font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
+                className=" hover:animate-none text-[#377A00] text-[15px] bg-[#EFEFEF] hover:scale-110 duration-200 font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
             >
                 Nous contacter via Whatsapp
             </Link>
