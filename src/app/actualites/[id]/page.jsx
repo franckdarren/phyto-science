@@ -1,21 +1,6 @@
 import Image from "next/image";
 import HotjarScript from "../../_components/HotjarScript";
 import data from "../../data/actualites";
-import ga from "../../../../public/assets/flag/🇬🇦 Gabon Flag Unveiled_ Colors, Meaning, Coat of Arms, Flag Map, and Similar Flags _ Mappr.jpeg";
-import ci from "../../../../public/assets/flag/Image du drapeau de la Côte d'Ivoire.jpeg";
-import gn from "../../../../public/assets/flag/Bandera 77 - Guinea.jpeg";
-import ml from "../../../../public/assets/flag/Mali - Wikipedia.jpeg";
-import bj from "../../../../public/assets/flag/Benín - Wikipedia, la enciclopedia libre.jpeg";
-import cm from "../../../../public/assets/flag/drapeau du Cameroun.jpeg";
-import gw from "../../../../public/assets/flag/Guinea-Bissau.jpeg";
-import sn from "../../../../public/assets/flag/Fichier_Flag of Senegal_svg — Wikipédia.jpeg";
-import cd from "../../../../public/assets/flag/Flag of Republic of the Congo.jpeg";
-import cg from "../../../../public/assets/flag/Flag of DR Congo.jpeg";
-import gq from "../../../../public/assets/flag/10 Reasons To Visit Equatorial Guinea.jpeg";
-import mg from "../../../../public/assets/flag/Madagascar.jpeg";
-import ne from "../../../../public/assets/flag/Drapeau du Niger — Wikipédia.jpeg";
-import ng from "../../../../public/assets/flag/téléchargement.jpeg";
-import td from "../../../../public/assets/flag/Flag of Chad.jpeg";
 
 export default function PageActualites({ params }) {
   const actualite = data.find(
