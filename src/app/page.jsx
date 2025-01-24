@@ -15,9 +15,9 @@ import Link from "next/link";
 import logo from "../../public/assets/logo phyto.png";
 import certificat from "../../public/assets/certificat.jpg";
 import iiQ from "../../public/assets/iiQ-plus.jpg";
-import bienvenue from "../../public/assets/bienvenue2.jpeg";
+import Bienvenue from "../../public/assets/Bienvenue.png";
 import baniereMpiga from "../../public/assets/mpiga-baniere.png";
-import banniere from "../../public/assets/banniere.png";
+import loba from "../../public/assets/loba.png";
 import temoignage1 from "../../public/assets/temoignage1.jpg";
 import temoignage2 from "../../public/assets/temoignage2.jpg";
 import temoignage3 from "../../public/assets/temoignage3.jpg";
@@ -80,9 +80,9 @@ const HeaderCarousel = () => {
                         data-carousel-item
                     >
                         <Image
-                            src={bienvenue}
+                            src={Bienvenue}
                             alt="Banière"
-                            className="object-fill absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
+                            className="object-fill absolute block rounded-3xl w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
                         />
                     </div>
                     {/* <!-- Item 2 --> */}
@@ -93,7 +93,7 @@ const HeaderCarousel = () => {
                         <Image
                             src={baniereMpiga}
                             alt="Banière madame Mpiga"
-                            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
+                            className="absolute block w-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
                         />
                     </div>
                     {/* <!-- Item trois --> */}
@@ -102,7 +102,7 @@ const HeaderCarousel = () => {
                         data-carousel-item
                     >
                         <Image
-                            src={banniere}
+                            src={loba}
                             alt="Photo de madame Mpiga"
                             className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
                         />
