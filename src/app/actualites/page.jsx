@@ -1,7 +1,11 @@
+"use client"
+
+
 import Image from "next/image";
 import actualites from "../data/actualites";
 import Link from "next/link";
 import HotjarScript from "../_components/HotjarScript";
+import { motion } from "framer-motion";
 
 export default function Actualites() {
   const lim = 90;
@@ -15,7 +19,12 @@ export default function Actualites() {
       <div className="flex flex-col justify-center md:grid md:grid-cols-2 gap-[30px] md:gap-6 lg:grid-cols-3">
         {/* Actualités */}
         {actualites.map((actualite) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0.0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+
+            transition={{ delay: 0.5, duration: 1.4, ease: "easeInOut" }}
+            viewport={{ once: true }}
             className="max-w-sm flex flex-col justify-between bg-white border border-gray-200 rounded-lg shadow mx-auto"
             key={actualite.id}
           >
@@ -31,6 +40,7 @@ export default function Actualites() {
                 {actualite.titre}
               </h5>
             </a>
+            <p className="px-5 py-2 text-[#377A00]/80 font-bold">{actualite.date}</p>
             <div className="px-5 pb-5">
               <p className="mb-3 font-normal text-gray-700">
                 {actualite.resume.length > lim
@@ -59,7 +69,7 @@ export default function Actualites() {
                 </svg>
               </Link>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
