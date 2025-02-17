@@ -54,7 +54,7 @@ const actualites = [
     {
         id: 4,
         titre: "Convention Phytoscience Gabon !!",
-        image: "/assets/testban.jpg",
+        image: "/assets/final.jpg",
         resume: "Thème Santé et Opportunités d'affaires",
          heure: "13h00",
          lien: "https://docs.google.com/forms/d/e/1FAIpQLSfzFmMmu1atdSscllqdMOOKkS6rgJwi6iFLUdaB2HwEvUVPow/viewform?usp=header",
@@ -63,7 +63,7 @@ const actualites = [
         //   code: "000",
         //   mdp: "9227805479",
           text1: "✨ Un événement d’exception sous le thème :  Santé & Opportunité. Une opportunité unique pour découvrir les bienfaits des solutions PhytoScience et explorer des perspectives inédites !  Nous avons l'honneur d'accueillir des invités de prestige, venus spécialement de Malaisie : ",
-          text2: "🔹 Le juge Francis Fabian Agwu, membre du jury  ",
+          text2: "🔹 M. Francis Tan",
           text3: "🔹 Mme Puan Sri Ela Tan Chin Ye, cofondatrice de PhytoScience ",
           text4: "🔹 M. Datuk Willy Toh, CEO de PhytoScience ",
           text5: "Réservez votre place dès maintenant et rejoignez-nous pour cette expérience enrichissante !",
