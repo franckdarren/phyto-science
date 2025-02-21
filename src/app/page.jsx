@@ -3,7 +3,6 @@
 import Button from "./_components/button";
 import Image from "next/image";
 import team from "../../public/assets/equipe.png";
-import mpiga from "../../public/assets/mme-mpiga.jpeg";
 import cellule from "../../public/assets/cellule.jpg";
 import traitement from "../../public/assets/traitement.jpg";
 import prevention from "../../public/assets/prevention.jpeg";
@@ -12,6 +11,7 @@ import nuforte from "../../public/assets/NuForte.jpg";
 import nulite from "../../public/assets/NuLite.jpg";
 import snowphy from "../../public/assets/SnowPhyllForte.png";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 import logo from "../../public/assets/logo phyto.png";
 import certificat from "../../public/assets/certificat.jpg";
 import iiQ from "../../public/assets/iiQ-plus.jpg";
@@ -28,9 +28,11 @@ import { motion } from "framer-motion";
 export default function Accueil() {
     return (
         <>
-        <HotjarScript />
+            <HotjarScript />
             {/* Header Carrousel */}
+
             <HeaderCarousel />
+            {/* <BasicSlider /> */}
 
             {/* Section Qui sommes nous? */}
             <PresentationPhytoScience />
@@ -67,13 +69,39 @@ export default function Accueil() {
 
 const HeaderCarousel = () => {
     return (
-        <div className="">
-            <div
+        <motion.div initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }} className="md:mx-10 my-14 h-[400px] gap-16 flex items-center justify-between">
+            <div className="w-[80%] flex flex-col gap-10">
+                <div className="flex flex-col gap-4">
+                    <motion.h1 initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }} className="text-5xl font-bold">Phytoscience Gabon</motion.h1>
+                    <motion.p initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.5, duration: 0.8 }} className="text-[#377A00] text-xl">                        Rejoignez une révolution du bien-être grâce à des solutions naturelles qui transforment la santé et ouvrent des perspectives uniques pour votre avenir financier.</motion.p>
+                </div>
+                <div className="flex gap-7"> <a
+                    href="https://wa.me/+24107849012"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-2 text-center text-white bg-[#5e9432] hover:bg-[#5e9432]/80 shadow-xl font-medium rounded-3xl px-3 py-2 transition-all duration-300 animate-shimmer bg-[linear-gradient(110deg,transparent,45%,#84cf46,55%,transparent)] bg-[length:200%_100%] duration-400 ease-out overflow-hidden group"
+                >
+                    Contactez-nous <Icon icon="stash:social-whatsapp-duotone" width="24" height="24" style={{ color: "#ffff" }} />
+                </a>
+                    <a className="hover:text-white duration-700 text-[#377A00] font-medium px-3 py-2 text-center hover:bg-[#377A00] border rounded-3xl border-[#377A00]" href="/actualites">En savoir plus</a></div>
+            </div>
+            <motion.div
                 id="default-carousel"
                 className="relative w-full"
                 data-carousel="slide"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
             >
-                <div className="relative h-56 overflow-hidden md:h-96">
+                <motion.div initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1 }} className="relative h-56 overflow-hidden md:h-96">
                     {/* <!-- Item 1 --> */}
                     <div
                         className="hidden duration-700 ease-in-out"
@@ -82,7 +110,7 @@ const HeaderCarousel = () => {
                         <Image
                             src={Bienvenue}
                             alt="Banière"
-                            className="object-fill absolute block rounded-3xl w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
+                            className="bg-cover bg-center absolute block rounded-3xl w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
                         />
                     </div>
                     {/* <!-- Item 2 --> */}
@@ -93,7 +121,7 @@ const HeaderCarousel = () => {
                         <Image
                             src={baniereMpiga}
                             alt="Banière madame Mpiga"
-                            className="absolute block w-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
+                            className="absolute bg-cover bg-center  block w-full rounded-3xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
                         />
                     </div>
                     {/* <!-- Item trois --> */}
@@ -104,10 +132,10 @@ const HeaderCarousel = () => {
                         <Image
                             src={loba}
                             alt="Photo de madame Mpiga"
-                            className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
+                            className="absolute bg-cover bg-center  block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 lg:h-full lg:w-auto"
                         />
                     </div>
-                </div>
+                </motion.div>
                 {/* <!-- Slider indicators --> */}
                 <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
                     <button
@@ -181,8 +209,8 @@ const HeaderCarousel = () => {
                         <span className="sr-only">Next</span>
                     </span>
                 </button>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 
@@ -637,9 +665,9 @@ const RevolutionTechnologique = () => {
             <Link
                 href="https://wa.me/+24107849012"
                 target="_blank"
-                className=" hover:animate-none text-[#377A00] text-[15px] bg-[#EFEFEF] hover:scale-110 duration-200 font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
+                className=" hover:animate-none flex gap-3 text-[#377A00] text-[15px] bg-[#EFEFEF] hover:scale-110 duration-200 font-medium rounded-3xl px-5 py-2.5 w-auto mx-auto"
             >
-                Nous contacter via Whatsapp
+                Nous contacter <Icon icon="stash:social-whatsapp-duotone" width="24" height="24" style={{ color: "#377A00" }} />
             </Link>
         </div>
     );
