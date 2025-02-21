@@ -39,7 +39,7 @@ export default function Produits() {
         {
             id: 5,
             nom: "NuLite",
-            image: "/assets/NuLite.jpeg",
+            image: "/assets/NuLite.jpg",
             description:
                 "<ul><li>- Selles régulières</li><li>- Soulager la constipation</li><li>- Soutenir la santé digestive</li><li>- Renforcer l’immunité</li><li>- Aide à la perte de poids</li><li>- La combustion des graisses</li><li>- Améliorer le taux de cholestérol</li><li>- Maintenir le contrôle de la glycémie</li></ul>",
         },

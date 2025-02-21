@@ -71,8 +71,8 @@ const HeaderCarousel = () => {
     return (
         <motion.div initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }} className="md:mx-10 my-14 h-[400px] gap-16 flex items-center justify-between">
-            <div className="w-[80%] flex flex-col gap-10">
+            transition={{ duration: 0.8 }} className="md:mx-10 my-5 md:my-14 h-[400px] gap-16 flex flex-col lg:flex-row items-center justify-between">
+            <div className="w-[80%] lg:w-[60%] flex flex-col gap-10">
                 <div className="flex flex-col gap-4">
                     <motion.h1 initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -216,7 +216,7 @@ const HeaderCarousel = () => {
 
 const PresentationPhytoScience = () => {
     return (
-        <div className="">
+        <div className="mt-80 lg:mt-10">
             <motion.div
                 className="my-[50px]"
                 initial={{ opacity: 0, scale: 0 }}
