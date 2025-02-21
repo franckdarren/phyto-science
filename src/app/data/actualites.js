@@ -54,7 +54,7 @@ const actualites = [
     {
         id: 4,
         titre: "Convention Phytoscience Gabon !!",
-        image: "/assets/Phytoscience.webp",
+        image: "/assets/event.jpg",
         resume: "Thème Santé et Opportunités d'affaires",
          heure: "13h00",
          lien: "https://docs.google.com/forms/d/e/1FAIpQLSfzFmMmu1atdSscllqdMOOKkS6rgJwi6iFLUdaB2HwEvUVPow/viewform?usp=header",

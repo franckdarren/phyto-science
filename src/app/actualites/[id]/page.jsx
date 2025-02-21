@@ -88,7 +88,7 @@ export default function PageActualites({ params }) {
                         href={actualite.lien}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-center text-white bg-[#5e9432] hover:bg-[#5e9432]/80 shadow-xl font-medium rounded-lg px-3 py-2 transition-all duration-300 animate-shimmer bg-[linear-gradient(110deg,transparent,45%,#84cf46,55%,transparent)] bg-[length:200%_100%] duration-400 ease-out overflow-hidden group"
+                        className="inline-block text-center text-white bg-[#5e9432] hover:bg-[#5e9432]/80 shadow-xl font-medium rounded-3xl px-3 py-2 transition-all duration-300 animate-shimmer bg-[linear-gradient(110deg,transparent,45%,#84cf46,55%,transparent)] bg-[length:200%_100%] duration-400 ease-out overflow-hidden group"
                       >
                         Rejoignez-nous
                       </a>
