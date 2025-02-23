@@ -1,5 +1,3 @@
-import Image from "next/image";
-import africa from "../../../public/assets/africa.png";
 import CardTemoignage from "./card";
 import data from "../data/temoignages.js";
 export default function Temoignages() {
