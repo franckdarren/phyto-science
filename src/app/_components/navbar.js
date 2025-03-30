@@ -105,6 +105,30 @@ export default function Navbar() {
                                 Actualités
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                href="/blog"
+                                className={`block py-2 px-3 rounded md:p-0 ${
+                                    pathname === "/blog"
+                                        ? "text-[#377A00] font-bold"
+                                        : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#377A00]"
+                                }`}
+                            >
+                                Blog
+                            </Link>
+                        </li>
+                        {/* <li>
+                            <Link
+                                href="/#"
+                                className={`block py-2 px-3 rounded md:p-0 ${
+                                    pathname === "/#"
+                                        ? "text-[#377A00] font-bold"
+                                        : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#377A00]"
+                                }`}
+                            >
+                                Contactez-nous
+                            </Link>
+                        </li> */}
                     </ul>
                 </div>
             </div>
