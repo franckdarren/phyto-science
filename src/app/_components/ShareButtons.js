@@ -5,7 +5,7 @@ const ShareButtons = ({ url, title, description }) => {
     const whatsappShare = `https://api.whatsapp.com/send?text=${encodeURIComponent(title)}%0A${encodeURIComponent(description)}%0A${encodeURIComponent(url)}`;
 
     return (
-        <div className="flex gap-4 px-4 mb-5">
+        <div className="flex gap-4 md:px-4 mb-5">
             <a href={facebookShare} target="_blank" rel="noopener noreferrer" className="bg-[#3F51B5] text-white p-2 rounded flex items-center gap-1 transition-transform duration-300 ease-in-out transform hover:scale-110 text-[15px]">
                 Partager sur Facebook
                 <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
