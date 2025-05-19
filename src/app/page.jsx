@@ -15,7 +15,7 @@ import { Icon } from "@iconify/react";
 import logo from "../../public/assets/logo phyto.png";
 import certificat from "../../public/assets/certificat.jpg";
 import iiQ from "../../public/assets/iiQ-plus.jpg";
-import Bienvenue from "../../public/assets/Bienvenue.png";
+import Bienvenue from "../../public/assets/Bienvenue12.png";
 import baniereMpiga from "../../public/assets/mpiga-baniere.png";
 import loba from "../../public/assets/loba.png";
 import temoignage1 from "../../public/assets/temoignage1.jpg";
