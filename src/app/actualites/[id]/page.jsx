@@ -76,8 +76,18 @@ export default function PageActualites({ params }) {
                           {text}
                         </p>
                       ))}
+                     
                     </div>
-
+ <video
+  src={actualite.video}
+  controls
+  autoPlay={false}
+  loop={false}
+  muted={false}
+  className=" rounded-lg shadow"
+>
+  Votre navigateur ne supporte pas la vidéo.
+</video>
 
                     {/* Zoom Link Section */}
                     <div className="flex flex-col justify-center items-center mt-6">
