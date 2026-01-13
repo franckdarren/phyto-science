@@ -14,6 +14,7 @@ const actualites = [
         text3: "⏰ 19h30 (Bénin, Cameroun , Congo-Brazzaville, RDC, Guinée Equatoriale , Niger, Nigeria , Gabon , Tchad )",
         text4: "⏰ 21h30 ( Lubumbashi, Madagascar) Informez et invitez tous vos partenaires et proches",
         text5: " Lien pour se connecter en ligne sur Zoom 👇",
+        video:"",
     }
      ,
     {
@@ -32,6 +33,7 @@ const actualites = [
         text3: "",
         text4: "",
         text5: " Lien pour se connecter en ligne sur Zoom 👇",
+        video:"",
 
     },
      {
@@ -50,6 +52,7 @@ const actualites = [
         text3: "",
         text4: "",
         text5: " Lien pour se connecter en ligne sur Zoom 👇",
+        video:"",
     },
     {
         id: 4,
@@ -67,6 +70,7 @@ const actualites = [
           text3: "🔹 Mme Puan Sri Ela Tan Chin Ye, cofondatrice de PhytoScience ",
           text4: "🔹 M. Datuk Willy Toh, CEO de PhytoScience ",
           text5: "Réservez votre place dès maintenant et rejoignez-nous pour cette expérience enrichissante !",
+            video:"",
       },
     // {
     //     id: 4,
@@ -80,18 +84,20 @@ const actualites = [
     //     code: "000",
     //     mdp: "9227805479"
     // },
-    // {
-    //     id: 5,
-    //     titre: "Article 5",
-    //     image: "/assets/cellule.jpg",
-    //     resume: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    //     heure: "/actualites/seminaire",
-    //     lien: "https://us02web.zoom.us/j/9227805479?pwd=OGtyaWF6NG1SaWplc1JaeVphMDFJUT09",
+    {
+        id: 5,
+        titre: "Lancement des activités Phytoscience ",
+        image: "/assets/event2.jpeg",
+        resume: "Thème Santé et Opportunités d'affaires",
+        heure: "14h00",
+        lien: "https://forms.gle/TVL553WqdsJp6y927",
 
-    //     date: "17-08-2024",
-    //     code: "000",
-    //     mdp: "9227805479"
-    // },
+        date: "Samedi 31 Janvier 2026",
+                  text1: "C'est avec un grand plaisir que vous avez été sélectionné(e) pour participer au lancement des activités PhytoScience de l'année 2026. Cet événement marquant se tiendra le samedi 31 janvier 2026 à 14h00, et promet d'être une expérience enrichissante pour tous les participants. Votre présence sera hautement appréciée.",
+                  video:"/assets/phytoevent.mp4",
+        // code: "000",
+        // mdp: "9227805479"
+    },
 
 ];
 export default actualites;
